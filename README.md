@@ -78,16 +78,18 @@ Repository secrets:
 | `CATALOG_SIGNING_KEY` | ed25519 private key (PKCS#8 PEM) from `node tools/keygen.mjs --out <file outside the repo>`; its public key is `catalog/catalog-signing.pub.pem` and is built into the desktop app |
 | `MIRROR_SSH_KEY` | a private SSH key used only for the mirror |
 | `MIRROR_SSH_HOST` | `user@host` of the download server |
-| `MIRROR_SSH_KNOWN_HOSTS` | the server's host key line (`ssh-keyscan -t ed25519 <host>`) |
+| `MIRROR_SSH_KNOWN_HOSTS` | the server's host key line (`<host> ssh-ed25519 AAAA...`) |
 
-On the download server the mirror key may only write below
-`~/downloads/templates` (served at `/downloads/templates/`), with rsync's
-restricted wrapper:
+The three `MIRROR_*` secrets and the server side are set up by the 7D24H
+release SOP (`make setup-template-mirror` in the main repository's
+`.docker/release`). On the download server the mirror key may only write
+below `~/downloads/templates` (served at `/downloads/templates/`), through
+rsync's restricted wrapper: no reads, no deletes, no shell, uploaded symlinks
+inert.
 
 ```sh
-mkdir -p ~/downloads/templates
 # ~/.ssh/authorized_keys, one line:
-command="rrsync -wo ~/downloads/templates",restrict ssh-ed25519 AAAA... 7d24h-templates-mirror
+command="rrsync -wo -no-del -munge /root/downloads/templates",restrict ssh-ed25519 AAAA... 7d24h-templates-mirror
 ```
 
 Without the `MIRROR_*` secrets a release is published on GitHub only and the
