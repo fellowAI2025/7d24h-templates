@@ -1,0 +1,87 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "pkuthss",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Peking University Thesis (pkuthss)",
+  "nameZh": "北京大学学位论文（pkuthss）",
+  "category": "thesis",
+  "tags": [
+    "北京大学",
+    "Peking University",
+    "pkuthss",
+    "学位论文",
+    "中文",
+    "biblatex"
+  ],
+  "description": "Peking University dissertation with the official pkuthss 1.9.4 class and logos and the copyright and originality statement pages of its example, unmodified; references with biblatex-caspervector. Variants: standard, strict school format (ugly), double-blind.",
+  "descriptionZh": "北京大学学位论文，使用官方 pkuthss 1.9.4 文档类与校徽文件，以及其示例中的版权声明和原创性声明页，均未改动；参考文献使用 biblatex-caspervector。变体：标准、严格校规格式（ugly）、双盲评审版。",
+  "license": {
+    "spdx": "CC0-1.0 AND LPPL-1.3c AND BSD-3-Clause",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://ctan.org/pkg/pkuthss",
+    "version": "pkuthss 1.9.4 (2024/03/07)",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "9fc48b019ccfa87600e7eab88871356159d5ad6c338e8f811410120f016c2913",
+      "bytes": 1570
+    },
+    {
+      "path": "chap/copy.tex",
+      "sha256": "804472dfca399941f07ae491a465adb5ffbcca9014b8a063133fa07bbfd18b57",
+      "bytes": 2349
+    },
+    {
+      "path": "chap/origin.tex",
+      "sha256": "0521e71f2bfb128dd49b2db474acaf9f83e435352550d443bef1d935db181e5d",
+      "bytes": 3775
+    },
+    {
+      "path": "main.tex",
+      "sha256": "43ca2f932d334964c95965f1a2470ca27ff9b559ea6cccfa086ed6102ec62f58",
+      "bytes": 3128
+    },
+    {
+      "path": "pkulogo.pdf",
+      "sha256": "240d8811eb437b814cebb77a3277181cc6d34ae4111d2e9b6d731da8101d7574",
+      "bytes": 3532
+    },
+    {
+      "path": "pkuthss-utf8.def",
+      "sha256": "bf5becca7793280de874095206b414d3b9309d05e7ca1d152883af3674af0536",
+      "bytes": 1756
+    },
+    {
+      "path": "pkuthss.cls",
+      "sha256": "b0b5cce807e0e7ddc0172674ed1e29d396eda13e204ac73e6b01e898393a9f92",
+      "bytes": 17165
+    },
+    {
+      "path": "pkuthss.def",
+      "sha256": "a41ace703fb4e6b4be2c4914472f7f492055e6d237d49e0bdb6e3664465fca2b",
+      "bytes": 1580
+    },
+    {
+      "path": "pkuword.pdf",
+      "sha256": "df46813321e153214feff703c7729d31339a8c9e1a358bff4ab440c385e5521d",
+      "bytes": 6282
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "7b128cf53bfdbdc44a72c9c77a66cc44960d7ac41fe21586a0f6eac0dcf5e79d",
+      "bytes": 4720
+    }
+  ]
+}

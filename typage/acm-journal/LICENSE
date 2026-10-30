@@ -1,0 +1,23 @@
+ACM Journal Article (acmart acmsmall) (typage/acm-journal) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; documents
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  acmart.cls, ACM-Reference-Format.bst
+      The official ACM consolidated article template, acmart 2.20
+      (2026/08/16), as distributed by CTAN and TeX Live
+      (https://ctan.org/pkg/acmart; the archive https://mirrors.ctan.org/systems/texlive/tlnet/archive/acmart.tar.xz).
+      acmart.cls is generated from acmart.dtx, which is under the LaTeX
+      Project Public License 1.3c (Copyright the Association for Computing
+      Machinery and Boris Veytsman). ACM-Reference-Format.bst is in the
+      public domain, as stated in its header. Both files are redistributed
+      unmodified, so that the template compiles offline.
+
+The packages the class loads (Libertine fonts, natbib, hyperref, ...) come
+from the built-in Tectonic bundle under their own licenses. Check
+https://www.acm.org/publications/proceedings-template and your venue's call
+for papers for the rules that apply to your submission.

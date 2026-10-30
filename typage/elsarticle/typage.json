@@ -1,0 +1,174 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "Elsevier journal",
+    "labelZh": "Elsevier 期刊"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "elsarticle.cls",
+      "inBundle": false,
+      "sha256": "40af0200a8ad6777126f93bf7be6ab3046fa7c3ef1073307f0809703602e59da",
+      "officialUrl": "https://mirrors.ctan.org/systems/texlive/tlnet/archive/elsarticle.tar.xz#tex/latex/elsarticle/elsarticle.cls",
+      "officialVersion": "elsarticle 3.5 (2026/01/09)"
+    },
+    {
+      "path": "elsarticle-num.bst",
+      "inBundle": false,
+      "sha256": "f04dfa2f78d0198ab8e4055b609dc0b91bdb730743cbbd549d84270f20d11394",
+      "officialUrl": "https://mirrors.ctan.org/systems/texlive/tlnet/archive/elsarticle.tar.xz#bibtex/bst/elsarticle/elsarticle-num.bst",
+      "officialVersion": "elsarticle 3.5 (2026/01/09)"
+    },
+    {
+      "path": "elsarticle-num-names.bst",
+      "inBundle": false,
+      "sha256": "c6c0d83707463ac6ebed7f43a754e38b7a38b17a8e58897e8057f8af0dc35024",
+      "officialUrl": "https://mirrors.ctan.org/systems/texlive/tlnet/archive/elsarticle.tar.xz#bibtex/bst/elsarticle/elsarticle-num-names.bst",
+      "officialVersion": "elsarticle 3.5 (2026/01/09)"
+    },
+    {
+      "path": "elsarticle-harv.bst",
+      "inBundle": false,
+      "sha256": "d85a928515628a9526d1d02f076f723a4da25387286a4f656d8943600880a436",
+      "officialUrl": "https://mirrors.ctan.org/systems/texlive/tlnet/archive/elsarticle.tar.xz#bibtex/bst/elsarticle/elsarticle-harv.bst",
+      "officialVersion": "elsarticle 3.5 (2026/01/09)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "elsarticle",
+    "ownedPackages": [],
+    "ownedCommands": [
+      "\\journal",
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "preprint",
+      "label": "Preprint (12 pt)",
+      "labelZh": "预印本（12 pt）",
+      "classOptions": [
+        "preprint",
+        "12pt"
+      ]
+    },
+    {
+      "id": "review",
+      "label": "Review (double-spaced)",
+      "labelZh": "评审稿（双倍行距）",
+      "classOptions": [
+        "review",
+        "12pt"
+      ]
+    },
+    {
+      "id": "final-1p",
+      "label": "Final, 1p layout",
+      "labelZh": "终稿 · 1p 版式",
+      "classOptions": [
+        "final",
+        "1p",
+        "times"
+      ]
+    },
+    {
+      "id": "final-3p",
+      "label": "Final, 3p two-column",
+      "labelZh": "终稿 · 3p 双栏",
+      "classOptions": [
+        "final",
+        "3p",
+        "times",
+        "twocolumn"
+      ]
+    },
+    {
+      "id": "final-5p",
+      "label": "Final, 5p two-column",
+      "labelZh": "终稿 · 5p 双栏",
+      "classOptions": [
+        "final",
+        "5p",
+        "times",
+        "twocolumn"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "elsarticle",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "abstract",
+      "keywords"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "elsarticle-num",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\ead",
+      "to": null
+    },
+    {
+      "command": "\\cortext",
+      "to": null
+    },
+    {
+      "command": "\\corref",
+      "to": null
+    },
+    {
+      "command": "\\fntext",
+      "to": null
+    },
+    {
+      "command": "\\fnref",
+      "to": null
+    },
+    {
+      "command": "\\sep",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Computer Modern",
+    "baseSizePt": 12,
+    "lineSpread": 1,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "elsarticle.cls": "class",
+    "elsarticle-num.bst": "bst",
+    "elsarticle-num-names.bst": "bst",
+    "elsarticle-harv.bst": "bst"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 3,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T12:02:48Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

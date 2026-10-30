@@ -1,0 +1,121 @@
+% >>> typage-template thuthesis@2026.10.1 variant=master
+\documentclass[degree=master,fontset=fandol]{thuthesis}
+\usepackage[sort]{natbib}
+\bibliographystyle{thuthesis-numeric}
+% <<< typage-template
+\thusetup{
+  output           = print,
+  title            = {论文题目},
+  title*           = {Thesis Title},
+  degree-category  = {工学硕士},
+  degree-category* = {Master of Engineering},
+  department       = {某某系},
+  discipline       = {某某学科},
+  discipline*      = {Discipline},
+  author           = {作者姓名},
+  author*          = {Author Name},
+  supervisor       = {导师姓名, 教授},
+  supervisor*      = {Professor Supervisor Name},
+}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\begin{document}
+
+\maketitle
+\copyrightpage
+
+\frontmatter
+
+\begin{abstract}
+  用一段话概述研究的问题、方法与主要结论。摘要应当独立成篇，
+不使用引用和未定义的缩写。
+
+  \thusetup{
+    keywords = {关键词一, 关键词二, 关键词三},
+  }
+\end{abstract}
+
+\begin{abstract*}
+  Summarize the problem, the method and the main results in one
+paragraph. The abstract stands on its own: no citations and no undefined
+abbreviations.
+
+  \thusetup{
+    keywords* = {keyword one, keyword two, keyword three},
+  }
+\end{abstract*}
+
+\tableofcontents
+\listoftables
+
+\mainmatter
+
+\chapter{引言}
+\label{chap:intro}
+
+\section{研究背景}
+介绍研究问题的背景与意义，并综述已有工作。引用文献时使用
+\cite{knuth1984texbook,lamport1994latex}。
+
+\section{本文的主要工作}
+列出本文的主要贡献，并说明全文的结构。
+
+\chapter{研究方法}
+\label{chap:method}
+
+描述所用方法。需要引用的公式应当编号，例如
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) .
+\end{equation}
+
+\chapter{实验与分析}
+\label{chap:experiments}
+
+表~\ref{tab:results} 给出了求解式~\eqref{eq:objective} 的结果。
+
+\begin{table}[!htb]
+  \centering
+  \caption{示例数据集上的结果（五次运行的均值 $\pm$ 标准差）}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \toprule
+    方法     & 准确率（\%）     & 时间（s） \\
+    \midrule
+    基线方法 & 81.2 $\pm$ 0.4 & 12.4      \\
+    本文方法 & 84.7 $\pm$ 0.3 & 10.9      \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\chapter{总结与展望}
+总结全文的工作，并指出今后的研究方向。
+
+\bibliography{refs}
+
+\appendix
+
+\chapter{补充材料}
+附录用于放置正文以外的推导、数据与程序说明。
+
+\backmatter
+
+\begin{acknowledgements}
+  感谢导师的指导，以及在研究和论文写作中给予帮助的老师与同学。
+\end{acknowledgements}
+
+\statement
+
+\begin{resume}
+  \section*{个人简历}
+  在此简述个人的教育经历。
+
+  \section*{在学期间完成的相关学术成果}
+  \subsection*{学术论文}
+  \begin{achievements}
+    \item 作者姓名, 合作者. 论文题目[J]. 期刊名称, 2027, 1(1): 1--10.
+  \end{achievements}
+\end{resume}
+
+\end{document}

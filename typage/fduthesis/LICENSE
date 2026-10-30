@@ -1,0 +1,24 @@
+Fudan University Thesis (fduthesis) (typage/fduthesis) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; documents
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  fduthesis.cls, fduthesis.def, fduthesis-en.cls, fudan-name.pdf,
+  fudan-emblem.pdf, fudan-emblem-new.pdf
+      fduthesis 0.9a (2023-05-27), the Fudan University thesis template,
+      Copyright 2017-2023 Xiangdong Zeng, under the LaTeX Project Public
+      License 1.3c, as stated in the file headers and the project README
+      (https://github.com/stone-zeng/fduthesis). As distributed by CTAN
+      (https://mirrors.ctan.org/install/macros/latex/contrib/fduthesis.tds.zip, identical to the fduthesis.tds.zip of
+      the v0.9a GitHub release). Redistributed unmodified, so that the
+      template compiles offline. The logo files show the emblem and name of
+      Fudan University, for theses of that university.
+
+The fonts (Fandol, XITS) and the other packages, among them gbt7714 for the
+reference list, come from the built-in Tectonic bundle under their own
+licenses. Check the current requirements of Fudan University before
+submitting.

@@ -60,7 +60,9 @@ function tectonic(bin, cache, args, cwd) {
  * cache, the second must succeed with --only-cached. Returns pages and PDF.
  */
 function build(dir, src, out, entry, options, label) {
-  const base = ['--untrusted', '--keep-logs', '--bundle', TECTONIC_BUNDLE_URL];
+  // Same flags as the desktop app (main/handlers.ts): with --keep-logs alone
+  // Tectonic drops main.log for some classes (acmart 2.20).
+  const base = ['--untrusted', '--keep-logs', '--keep-intermediates', '--bundle', TECTONIC_BUNDLE_URL];
   if (!options.offline) {
     const first = tectonic(options.tectonic, options.cache, [...base, '--outdir', mkOut(`${out}-fetch`), entry], src);
     if (!first.ok) throw new ToolError(`${rel(dir)}${label}: compile failed\n${tail(first.output)}`);

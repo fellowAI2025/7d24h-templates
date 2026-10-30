@@ -1,0 +1,210 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "thesis",
+  "venue": {
+    "profileId": null,
+    "label": "Tsinghua University",
+    "labelZh": "清华大学"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "thuthesis.cls",
+      "inBundle": false,
+      "sha256": "4cbb87b799e24dce8b2e089893eafcd2f94c0ca50caa4f4f36fa9ebbb1872021",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thuthesis.cls",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thu-fig-logo.pdf",
+      "inBundle": false,
+      "sha256": "a49220ee5b4ecd6afcdc694e0cc75a2bb84d42d19e3facee4b88f70268dbbb4d",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thu-fig-logo.pdf",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thu-text-logo.pdf",
+      "inBundle": false,
+      "sha256": "5db987a65995a590fed4b8430a55795097c5be58980dfe6116daa28be32953c8",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thu-text-logo.pdf",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-numeric.bst",
+      "inBundle": false,
+      "sha256": "cc5bc236aecad4404250c6646d338ad0eaa989abbc1e11716eeef0d66751c5f9",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#bibtex/bst/thuthesis/thuthesis-numeric.bst",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-author-year.bst",
+      "inBundle": false,
+      "sha256": "a1c512f3c22bf89485c2eaaca6738fc70882952de41c2ceb7833f0b796f4c771",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#bibtex/bst/thuthesis/thuthesis-author-year.bst",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-bachelor.bst",
+      "inBundle": false,
+      "sha256": "3667911331d823a018b1f224237d95c35c1b367506a9d7a028d09a6bc735fd7a",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#bibtex/bst/thuthesis/thuthesis-bachelor.bst",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-numeric.bbx",
+      "inBundle": false,
+      "sha256": "bc3ca176754e90cc74bd5ec964a6d754bd20b824d8e5375f905f25dd40c90270",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thuthesis-numeric.bbx",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-numeric.cbx",
+      "inBundle": false,
+      "sha256": "858966c5b1529bebec6fa8b38192a428ed4b524343cdb1e1dc8cf2a4dfac6856",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thuthesis-numeric.cbx",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-author-year.bbx",
+      "inBundle": false,
+      "sha256": "7fdf72deab70fe36691e5f4a28ef9e40483de9e55bef5870777002862fdcf8fc",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thuthesis-author-year.bbx",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-author-year.cbx",
+      "inBundle": false,
+      "sha256": "93aa95781a1a8cfe8da003eb1e236c4264e3200dcb3a48f454257e6ecbc79742",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thuthesis-author-year.cbx",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-bachelor.bbx",
+      "inBundle": false,
+      "sha256": "557f6021d5ce2184cc11247a6a76a7449d0b557401125b9143ead3963ee6582d",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thuthesis-bachelor.bbx",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-bachelor.cbx",
+      "inBundle": false,
+      "sha256": "a917867267e854335d73a462d59a4fb5b9daf7bdd3d7b384983420acffeb0f32",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thuthesis-bachelor.cbx",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    },
+    {
+      "path": "thuthesis-inline.cbx",
+      "inBundle": false,
+      "sha256": "56ffcee2b830b7255a000dda5bf4884f15e771958c09344fe22cb0bf4f0389dc",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip#tex/latex/thuthesis/thuthesis-inline.cbx",
+      "officialVersion": "ThuThesis 7.7.1 (2026/05/26)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "thuthesis",
+    "ownedPackages": [
+      "natbib"
+    ],
+    "ownedCommands": [
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "master",
+      "label": "Master",
+      "labelZh": "硕士",
+      "classOptions": [
+        "degree=master",
+        "fontset=fandol"
+      ]
+    },
+    {
+      "id": "doctor",
+      "label": "Doctor",
+      "labelZh": "博士",
+      "classOptions": [
+        "degree=doctor",
+        "fontset=fandol"
+      ]
+    },
+    {
+      "id": "bachelor",
+      "label": "Bachelor",
+      "labelZh": "本科",
+      "classOptions": [
+        "degree=bachelor",
+        "fontset=fandol"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "ctex-thesis",
+    "fields": [
+      "title",
+      "authors",
+      "abstract",
+      "keywords"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "thuthesis-numeric",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\thusetup",
+      "to": null
+    },
+    {
+      "command": "\\copyrightpage",
+      "to": null
+    },
+    {
+      "command": "\\statement",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "FandolSong",
+    "baseSizePt": 12,
+    "lineSpread": 1.5,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "thuthesis.cls": "class",
+    "thu-fig-logo.pdf": "figure",
+    "thu-text-logo.pdf": "figure",
+    "thuthesis-numeric.bst": "bst",
+    "thuthesis-author-year.bst": "bst",
+    "thuthesis-bachelor.bst": "bst",
+    "thuthesis-numeric.bbx": "support",
+    "thuthesis-numeric.cbx": "support",
+    "thuthesis-author-year.bbx": "support",
+    "thuthesis-author-year.cbx": "support",
+    "thuthesis-bachelor.bbx": "support",
+    "thuthesis-bachelor.cbx": "support",
+    "thuthesis-inline.cbx": "support"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 19,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T12:03:11Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

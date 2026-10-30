@@ -1,0 +1,21 @@
+Elsevier Journal Article (elsarticle) (typage/elsarticle) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; documents
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  elsarticle.cls, elsarticle-num.bst, elsarticle-num-names.bst,
+  elsarticle-harv.bst
+      The official Elsevier article class, elsarticle 3.5 (2026/01/09),
+      Copyright 2007-2026 Elsevier Ltd, under the LaTeX Project Public
+      License 1.3 or later, as stated in the file headers. As distributed by
+      CTAN and TeX Live (https://ctan.org/pkg/elsarticle; the archive
+      https://mirrors.ctan.org/systems/texlive/tlnet/archive/elsarticle.tar.xz). Redistributed unmodified, so that the
+      template compiles offline.
+
+The packages the sample loads come from the built-in Tectonic bundle under
+their own licenses. Check the guide for authors of your journal at
+https://www.elsevier.com for the rules that apply to your submission.

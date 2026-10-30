@@ -1,0 +1,116 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "thuthesis",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Tsinghua University Thesis (ThuThesis)",
+  "nameZh": "清华大学学位论文（ThuThesis）",
+  "category": "thesis",
+  "tags": [
+    "清华大学",
+    "Tsinghua",
+    "ThuThesis",
+    "学位论文",
+    "中文"
+  ],
+  "description": "Tsinghua University bachelor, master and doctoral thesis with the official ThuThesis 7.7.1 class, bibliography styles and logos, unmodified, using the Fandol fonts of the built-in bundle. Variants: master, doctor, bachelor.",
+  "descriptionZh": "清华大学本科、硕士、博士学位论文，使用官方 ThuThesis 7.7.1 文档类、参考文献样式与校徽文件，未改动；字体使用内置 bundle 的 Fandol。变体：硕士、博士、本科。",
+  "license": {
+    "spdx": "CC0-1.0 AND LPPL-1.3c",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://github.com/tuna/thuthesis",
+    "version": "ThuThesis 7.7.1 (2026/05/26)",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "edfc23e3d511a2e94725fe892c2102f9409a84751ea3ffe98f8e9dc7e3fe24ec",
+      "bytes": 1307
+    },
+    {
+      "path": "main.tex",
+      "sha256": "ae1f13cc67d7c0b45897ee1e4fce98e1daa713272a490f62ee9840be44a21e90",
+      "bytes": 3064
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "thu-fig-logo.pdf",
+      "sha256": "a49220ee5b4ecd6afcdc694e0cc75a2bb84d42d19e3facee4b88f70268dbbb4d",
+      "bytes": 111420
+    },
+    {
+      "path": "thu-text-logo.pdf",
+      "sha256": "5db987a65995a590fed4b8430a55795097c5be58980dfe6116daa28be32953c8",
+      "bytes": 22013
+    },
+    {
+      "path": "thuthesis-author-year.bbx",
+      "sha256": "7fdf72deab70fe36691e5f4a28ef9e40483de9e55bef5870777002862fdcf8fc",
+      "bytes": 1585
+    },
+    {
+      "path": "thuthesis-author-year.bst",
+      "sha256": "a1c512f3c22bf89485c2eaaca6738fc70882952de41c2ceb7833f0b796f4c771",
+      "bytes": 50314
+    },
+    {
+      "path": "thuthesis-author-year.cbx",
+      "sha256": "93aa95781a1a8cfe8da003eb1e236c4264e3200dcb3a48f454257e6ecbc79742",
+      "bytes": 502
+    },
+    {
+      "path": "thuthesis-bachelor.bbx",
+      "sha256": "557f6021d5ce2184cc11247a6a76a7449d0b557401125b9143ead3963ee6582d",
+      "bytes": 804
+    },
+    {
+      "path": "thuthesis-bachelor.bst",
+      "sha256": "3667911331d823a018b1f224237d95c35c1b367506a9d7a028d09a6bc735fd7a",
+      "bytes": 46500
+    },
+    {
+      "path": "thuthesis-bachelor.cbx",
+      "sha256": "a917867267e854335d73a462d59a4fb5b9daf7bdd3d7b384983420acffeb0f32",
+      "bytes": 1325
+    },
+    {
+      "path": "thuthesis-inline.cbx",
+      "sha256": "56ffcee2b830b7255a000dda5bf4884f15e771958c09344fe22cb0bf4f0389dc",
+      "bytes": 863
+    },
+    {
+      "path": "thuthesis-numeric.bbx",
+      "sha256": "bc3ca176754e90cc74bd5ec964a6d754bd20b824d8e5375f905f25dd40c90270",
+      "bytes": 1824
+    },
+    {
+      "path": "thuthesis-numeric.bst",
+      "sha256": "cc5bc236aecad4404250c6646d338ad0eaa989abbc1e11716eeef0d66751c5f9",
+      "bytes": 46501
+    },
+    {
+      "path": "thuthesis-numeric.cbx",
+      "sha256": "858966c5b1529bebec6fa8b38192a428ed4b524343cdb1e1dc8cf2a4dfac6856",
+      "bytes": 1356
+    },
+    {
+      "path": "thuthesis.cls",
+      "sha256": "4cbb87b799e24dce8b2e089893eafcd2f94c0ca50caa4f4f36fa9ebbb1872021",
+      "bytes": 116879
+    },
+    {
+      "path": "typage.json",
+      "sha256": "82e8e44dff03e28db9b4e09827854118879c3e72007c3c693214e5e7b3cb83df",
+      "bytes": 7107
+    }
+  ]
+}

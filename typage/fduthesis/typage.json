@@ -1,0 +1,139 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "thesis",
+  "venue": {
+    "profileId": null,
+    "label": "Fudan University",
+    "labelZh": "复旦大学"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "fduthesis.cls",
+      "inBundle": false,
+      "sha256": "5d447f857e9169ebf00ded0028b0f11d70c22146c0768a8d75005ad415a4fc78",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/fduthesis.tds.zip#tex/latex/fduthesis/fduthesis.cls",
+      "officialVersion": "fduthesis 0.9a (2023-05-27)"
+    },
+    {
+      "path": "fduthesis.def",
+      "inBundle": false,
+      "sha256": "7bb4aed44a009fa8049496a0551968aa9fc70cf0574ddc400e7d7c3ed032652c",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/fduthesis.tds.zip#tex/latex/fduthesis/fduthesis.def",
+      "officialVersion": "fduthesis 0.9a (2023-05-27)"
+    },
+    {
+      "path": "fduthesis-en.cls",
+      "inBundle": false,
+      "sha256": "b8a07d14e958ddf8194b777b2cca1b4deb14b319089165d37b142c2e60edc01c",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/fduthesis.tds.zip#tex/latex/fduthesis/fduthesis-en.cls",
+      "officialVersion": "fduthesis 0.9a (2023-05-27)"
+    },
+    {
+      "path": "fudan-name.pdf",
+      "inBundle": false,
+      "sha256": "b67bc0ddce658ffb536c2cdf3522203927e5a7f82f27af977be06c841daaba2b",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/fduthesis.tds.zip#tex/latex/fduthesis/fudan-name.pdf",
+      "officialVersion": "fduthesis 0.9a (2023-05-27)"
+    },
+    {
+      "path": "fudan-emblem.pdf",
+      "inBundle": false,
+      "sha256": "d7eafc2243baa80c664e2c47ed137f2ce06ac0a59e81cc12768bb4f655c3bba8",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/fduthesis.tds.zip#tex/latex/fduthesis/fudan-emblem.pdf",
+      "officialVersion": "fduthesis 0.9a (2023-05-27)"
+    },
+    {
+      "path": "fudan-emblem-new.pdf",
+      "inBundle": false,
+      "sha256": "649e1a1245df08c9d1243568d027295491c1b5648f78421f05c689350d805ff6",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/fduthesis.tds.zip#tex/latex/fduthesis/fudan-emblem-new.pdf",
+      "officialVersion": "fduthesis 0.9a (2023-05-27)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "fduthesis",
+    "ownedPackages": [],
+    "ownedCommands": []
+  },
+  "variants": [
+    {
+      "id": "doctor",
+      "label": "Doctor",
+      "labelZh": "博士",
+      "classOptions": [
+        "type=doctor"
+      ]
+    },
+    {
+      "id": "master",
+      "label": "Master",
+      "labelZh": "硕士",
+      "classOptions": [
+        "type=master"
+      ]
+    },
+    {
+      "id": "bachelor",
+      "label": "Bachelor",
+      "labelZh": "本科",
+      "classOptions": [
+        "type=bachelor"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "ctex-thesis",
+    "fields": [
+      "title",
+      "authors",
+      "abstract",
+      "keywords"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "gbt7714-numerical",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\fdusetup",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "FandolSong",
+    "baseSizePt": 12,
+    "lineSpread": 1.5,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "fduthesis.cls": "class",
+    "fduthesis-en.cls": "class",
+    "fduthesis.def": "support",
+    "fudan-name.pdf": "figure",
+    "fudan-emblem.pdf": "figure",
+    "fudan-emblem-new.pdf": "figure"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 23,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T12:05:00Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

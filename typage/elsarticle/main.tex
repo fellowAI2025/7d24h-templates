@@ -1,0 +1,91 @@
+% >>> typage-template elsarticle@2026.10.1 variant=preprint
+\documentclass[preprint,12pt]{elsarticle}
+\journal{Journal Name}
+% Numeric citations; elsarticle-num-names and elsarticle-harv (author-year)
+% are included too.
+\bibliographystyle{elsarticle-num}
+% <<< typage-template
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Paper Title}
+
+\author[uni]{First Author\corref{cor}}
+\ead{first.author@example.com}
+\cortext[cor]{Corresponding author.}
+
+\author[inst]{Second Author}
+
+\affiliation[uni]{organization={Department, University},
+            city={City},
+            postcode={00000},
+            country={Country}}
+
+\affiliation[inst]{organization={Institute},
+            city={City},
+            country={Country}}
+
+\begin{abstract}
+State the problem, the approach and the main result in a single
+paragraph.
+\end{abstract}
+
+\begin{highlights}
+\item The first main finding, in one line.
+\item The second main finding, in one line.
+\end{highlights}
+
+\begin{keyword}
+first keyword \sep second keyword \sep third keyword
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}
+\label{sec:intro}
+Introduce the problem and list the contributions. Cite prior work in
+running text, as in \citet{knuth1984texbook}, or in
+parentheses~\citep{lamport1994latex}.
+
+\section{Method}
+\label{sec:method}
+Describe the method. Number the equations you refer to:
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) .
+\end{equation}
+
+\section{Experiments}
+\label{sec:experiments}
+Table~\ref{tab:results} reports the results of
+optimizing~\eqref{eq:objective}. Describe the data, the baselines and the
+compute used, and report the variation across runs.
+
+\begin{table}[!htb]
+  \caption{Results on the example benchmark (mean $\pm$ standard deviation over five runs).}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Method   & Accuracy (\%)  & Time (s) \\
+    \midrule
+    Baseline & 81.2 $\pm$ 0.4 & 12.4     \\
+    Ours     & 84.7 $\pm$ 0.3 & 10.9     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Conclusion}
+Conclude and outline future work.
+
+\section*{Acknowledgements}
+Acknowledge funding and help here.
+
+\bibliography{refs}
+
+\end{document}

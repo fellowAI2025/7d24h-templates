@@ -1,0 +1,60 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "acm-journal",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "ACM Journal Article (acmart acmsmall)",
+  "nameZh": "ACM 期刊论文（acmart acmsmall）",
+  "category": "journal",
+  "tags": [
+    "ACM",
+    "acmart",
+    "acmsmall",
+    "journal"
+  ],
+  "description": "ACM journal article in the acmsmall format with the official acmart 2.20 class and ACM-Reference-Format.bst, unmodified. Variants: anonymous review, final.",
+  "descriptionZh": "ACM 期刊论文（acmsmall 格式），使用官方 acmart 2.20 类与 ACM-Reference-Format.bst，未改动。变体：匿名评审、终稿。",
+  "license": {
+    "spdx": "CC0-1.0 AND LPPL-1.3c AND LicenseRef-Public-Domain",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://ctan.org/pkg/acmart",
+    "version": "acmart 2.20 (2026/08/16)",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "ACM-Reference-Format.bst",
+      "sha256": "4342d27456645567ef1a027f6474e894715bc31d468f040142fa54540440ad04",
+      "bytes": 94292
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9da72ce22a70e56ab1052a0463fe50d53ab7aad20df4fdb1392d8b97a8ad6fc6",
+      "bytes": 1277
+    },
+    {
+      "path": "acmart.cls",
+      "sha256": "784c4f2fb07a70d8a797ee9d1c63f441c10fbd2f915c9c615d28cda35c0b742a",
+      "bytes": 121874
+    },
+    {
+      "path": "main.tex",
+      "sha256": "006c7a2e0608d136203257ab920495433650bc054a600feebaa2ee762363ff02",
+      "bytes": 2505
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "c7bb12f5a39894f44d142c5b5790b41833d6443a1ba40a7e93b6223466a98c63",
+      "bytes": 3009
+    }
+  ]
+}

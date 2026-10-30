@@ -1,0 +1,31 @@
+Peking University Thesis (pkuthss) (typage/pkuthss) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; documents
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  pkuthss.cls, pkuthss.def, pkuthss-utf8.def, pkulogo.pdf, pkuword.pdf
+      pkuthss 1.9.4 (2024/03/07), the Peking University dissertation
+      class, Copyright solvethis, Casper Ti. Vector and Kurapica, under the
+      LaTeX Project Public License 1.3 or later, as stated in the package
+      README. The logo files show the emblem and name of Peking University,
+      for dissertations of that university.
+
+  chap/copy.tex, chap/origin.tex
+      The copyright notice and the originality / authorization statement
+      pages of the pkuthss example, Copyright solvethis and Casper Ti.
+      Vector, under the New BSD License (BSD-3-Clause), whose terms are in
+      the file headers.
+
+All seven files are as distributed by CTAN (https://mirrors.ctan.org/install/macros/latex/contrib/pkuthss.tds.zip;
+https://ctan.org/pkg/pkuthss) and redistributed unmodified, so that the
+template compiles offline.
+
+biblatex, biblatex-caspervector, the fonts (Fandol, XITS, TeX Gyre) and the
+other packages come from the built-in Tectonic bundle under their own
+licenses; references are processed with the built-in biber 2.17. Check the
+current requirements of the Peking University graduate school before
+submitting.

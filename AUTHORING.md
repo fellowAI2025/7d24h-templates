@@ -39,7 +39,13 @@ A venue's class, style and `.bst` files are used exactly as published:
 Record `sha256`, `officialUrl` and `officialVersion`. CI checks the hashes and
 `tools/check-official.mjs` compares them with the official address weekly.
 When the venue publishes only a zip, the address is `<zip url>#<file in the
-zip>`; for a GitHub repository, use the raw address at a fixed commit. Ship
+zip>`; for a GitHub repository, use the raw address at a fixed commit. A
+CTAN package is addressed inside its `install/*.tds.zip`
+(`https://mirrors.ctan.org/install/macros/latex/contrib/<pkg>.tds.zip#tex/latex/<pkg>/<file>`);
+a package that CTAN ships only as `.dtx` (acmart, elsarticle) is addressed
+inside its TeX Live archive
+(`https://mirrors.ctan.org/systems/texlive/tlnet/archive/<pkg>.tar.xz#tex/latex/<pkg>/<file>`),
+which holds the generated `.cls` byte for byte as TeX Live installs it. Ship
 the support files of the official kit as published too (they are official
 files); leave out a file whose own notice forbids distributing it on its own
 (ICLR's `natbib.sty` requires `natbib.dtx`) and let the bundle provide that
@@ -98,6 +104,7 @@ withdraw a template set `"withdrawn": true` in `manifest.json`.
 
 ```sh
 node tools/update-hashes.mjs typage/<id>
+# biblatex templates: put biber 2.17 on PATH first
 node tools/compile.mjs --tectonic <path to tectonic 0.17.0> --cache <cache dir> \
   --write-verified --pdf-out /tmp/pdf typage/<id>
 node tools/validate.mjs

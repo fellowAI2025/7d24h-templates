@@ -1,0 +1,141 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "ACM conference",
+    "labelZh": "ACM 会议"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "acmart.cls",
+      "inBundle": false,
+      "sha256": "784c4f2fb07a70d8a797ee9d1c63f441c10fbd2f915c9c615d28cda35c0b742a",
+      "officialUrl": "https://mirrors.ctan.org/systems/texlive/tlnet/archive/acmart.tar.xz#tex/latex/acmart/acmart.cls",
+      "officialVersion": "acmart 2.20 (2026/08/16)"
+    },
+    {
+      "path": "ACM-Reference-Format.bst",
+      "inBundle": false,
+      "sha256": "4342d27456645567ef1a027f6474e894715bc31d468f040142fa54540440ad04",
+      "officialUrl": "https://mirrors.ctan.org/systems/texlive/tlnet/archive/acmart.tar.xz#bibtex/bst/acmart/ACM-Reference-Format.bst",
+      "officialVersion": "acmart 2.20 (2026/08/16)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "acmart",
+    "ownedPackages": [],
+    "ownedCommands": [
+      "\\bibliographystyle",
+      "\\setcopyright",
+      "\\copyrightyear",
+      "\\acmYear",
+      "\\acmDOI",
+      "\\acmConference",
+      "\\acmISBN"
+    ]
+  },
+  "variants": [
+    {
+      "id": "review",
+      "label": "Anonymous review",
+      "labelZh": "匿名评审",
+      "classOptions": [
+        "sigconf",
+        "review",
+        "anonymous"
+      ]
+    },
+    {
+      "id": "final",
+      "label": "Final",
+      "labelZh": "终稿",
+      "classOptions": [
+        "sigconf"
+      ]
+    },
+    {
+      "id": "authordraft",
+      "label": "Author draft",
+      "labelZh": "作者稿",
+      "classOptions": [
+        "sigconf",
+        "authordraft"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "acmart",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "abstract",
+      "keywords",
+      "ccs"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "ACM-Reference-Format",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\ccsdesc",
+      "to": null
+    },
+    {
+      "command": "\\keywords",
+      "to": null
+    },
+    {
+      "command": "\\institution",
+      "to": null
+    },
+    {
+      "command": "\\city",
+      "to": null
+    },
+    {
+      "command": "\\country",
+      "to": null
+    },
+    {
+      "command": "\\Description",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Linux Libertine",
+    "baseSizePt": 9,
+    "lineSpread": 1,
+    "paper": "letter"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "acmart.cls": "class",
+    "ACM-Reference-Format.bst": "bst"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 1,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T12:08:29Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

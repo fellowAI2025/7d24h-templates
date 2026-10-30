@@ -1,0 +1,221 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "APS Physical Review",
+    "labelZh": "APS Physical Review"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "revtex4-2.cls",
+      "inBundle": false,
+      "sha256": "58727044fa47fff2663615774f8f24baab978944bbc55f84f8dc08ef91f67358",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/revtex4-2.cls",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "aps4-2.rtx",
+      "inBundle": false,
+      "sha256": "52d33501cae6dfdf339efeb2a79fda0a2780d1d39d96b61a1c6a6311da6ca05e",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/aps4-2.rtx",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "aps10pt4-2.rtx",
+      "inBundle": false,
+      "sha256": "0cc5d7fab6ffd59ba5779f9ddfad990cb8a71438ea390277bafff1824bbcb8e4",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/aps10pt4-2.rtx",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "aps11pt4-2.rtx",
+      "inBundle": false,
+      "sha256": "f0ad65dcca6ed1352c3edda5b086b678301bce743a6ac44e69d4dc34a114a6de",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/aps11pt4-2.rtx",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "aps12pt4-2.rtx",
+      "inBundle": false,
+      "sha256": "ed800427c862eee9fec9c705ca7fb1d82dc1f6abee5598257653e89d875e94bd",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/aps12pt4-2.rtx",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "apsrmp4-2.rtx",
+      "inBundle": false,
+      "sha256": "d467dd7ef50ce824be8034c503a11a5b4552d7f71d7272c71f590f31a9612549",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/apsrmp4-2.rtx",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "revsymb4-2.sty",
+      "inBundle": false,
+      "sha256": "7614d7446d929f49917e54c8590d7ff7408572a9d2d293d209ea718540947d3e",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/revsymb4-2.sty",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "ltxutil.sty",
+      "inBundle": false,
+      "sha256": "847d54f1b7a5cab3edccdb0ae2efd2d03f49c18f7b0e0cef8eff1f34ef63d63f",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/ltxutil.sty",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "ltxfront.sty",
+      "inBundle": false,
+      "sha256": "99e79d9d491f87c7ecf59eede97dd2a91c210519e57da1144ad618766c774ee2",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/ltxfront.sty",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "ltxgrid.sty",
+      "inBundle": false,
+      "sha256": "18c9dc3288f8eebbb9401eab5deb6f378954da29b4176a12be3ae3567b5dae7f",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/ltxgrid.sty",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "ltxdocext.sty",
+      "inBundle": false,
+      "sha256": "0d6c5b939cb9421ab807432ed38b157c7819fb22890ead33ed0150c1f1093a57",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#tex/latex/revtex/ltxdocext.sty",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "apsrev4-2.bst",
+      "inBundle": false,
+      "sha256": "68e8c6680907dfe0c5a0126eb5eb917952150feca2eb6c56042fdd7f7e79aa97",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#bibtex/bst/revtex/apsrev4-2.bst",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    },
+    {
+      "path": "apsrmp4-2.bst",
+      "inBundle": false,
+      "sha256": "39cdccedb1b2716c1df2b5da403ab9e7cb29aa67957bf73160ab52b798835fa4",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip#bibtex/bst/revtex/apsrmp4-2.bst",
+      "officialVersion": "REVTeX 4.2f (2022/06/05)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "revtex4-2",
+    "ownedPackages": [],
+    "ownedCommands": []
+  },
+  "variants": [
+    {
+      "id": "prl",
+      "label": "Physical Review Letters (reprint)",
+      "labelZh": "Physical Review Letters（排版样式）",
+      "classOptions": [
+        "aps",
+        "prl",
+        "reprint",
+        "amsmath",
+        "amssymb"
+      ]
+    },
+    {
+      "id": "prb",
+      "label": "Physical Review B (reprint)",
+      "labelZh": "Physical Review B（排版样式）",
+      "classOptions": [
+        "aps",
+        "prb",
+        "reprint",
+        "amsmath",
+        "amssymb"
+      ]
+    },
+    {
+      "id": "preprint",
+      "label": "Preprint (single column)",
+      "labelZh": "预印本（单栏）",
+      "classOptions": [
+        "aps",
+        "prb",
+        "preprint",
+        "amsmath",
+        "amssymb"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "revtex",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "abstract",
+      "date"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "apsrev4-2",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\affiliation",
+      "to": null
+    },
+    {
+      "command": "\\email",
+      "to": null
+    },
+    {
+      "command": "\\preprint",
+      "to": null
+    },
+    {
+      "command": "\\collaboration",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Computer Modern",
+    "baseSizePt": 10,
+    "lineSpread": 1,
+    "paper": "letter"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "revtex4-2.cls": "class",
+    "apsrev4-2.bst": "bst",
+    "apsrmp4-2.bst": "bst",
+    "aps4-2.rtx": "support",
+    "aps10pt4-2.rtx": "support",
+    "aps11pt4-2.rtx": "support",
+    "aps12pt4-2.rtx": "support",
+    "apsrmp4-2.rtx": "support",
+    "revsymb4-2.sty": "support",
+    "ltxutil.sty": "support",
+    "ltxfront.sty": "support",
+    "ltxgrid.sty": "support",
+    "ltxdocext.sty": "support"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 1,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T12:02:51Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

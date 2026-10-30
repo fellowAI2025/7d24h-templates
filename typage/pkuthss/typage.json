@@ -1,0 +1,171 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "thesis",
+  "venue": {
+    "profileId": null,
+    "label": "Peking University",
+    "labelZh": "北京大学"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": "2.17"
+  },
+  "officialFiles": [
+    {
+      "path": "pkuthss.cls",
+      "inBundle": false,
+      "sha256": "b0b5cce807e0e7ddc0172674ed1e29d396eda13e204ac73e6b01e898393a9f92",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/pkuthss.tds.zip#tex/latex/pkuthss/pkuthss.cls",
+      "officialVersion": "pkuthss 1.9.4 (2024/03/07)"
+    },
+    {
+      "path": "pkuthss.def",
+      "inBundle": false,
+      "sha256": "a41ace703fb4e6b4be2c4914472f7f492055e6d237d49e0bdb6e3664465fca2b",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/pkuthss.tds.zip#tex/latex/pkuthss/pkuthss.def",
+      "officialVersion": "pkuthss 1.9.4 (2024/03/07)"
+    },
+    {
+      "path": "pkuthss-utf8.def",
+      "inBundle": false,
+      "sha256": "bf5becca7793280de874095206b414d3b9309d05e7ca1d152883af3674af0536",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/pkuthss.tds.zip#tex/latex/pkuthss/pkuthss-utf8.def",
+      "officialVersion": "pkuthss 1.9.4 (2024/03/07)"
+    },
+    {
+      "path": "pkulogo.pdf",
+      "inBundle": false,
+      "sha256": "240d8811eb437b814cebb77a3277181cc6d34ae4111d2e9b6d731da8101d7574",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/pkuthss.tds.zip#tex/latex/pkuthss/pkulogo.pdf",
+      "officialVersion": "pkuthss 1.9.4 (2024/03/07)"
+    },
+    {
+      "path": "pkuword.pdf",
+      "inBundle": false,
+      "sha256": "df46813321e153214feff703c7729d31339a8c9e1a358bff4ab440c385e5521d",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/pkuthss.tds.zip#tex/latex/pkuthss/pkuword.pdf",
+      "officialVersion": "pkuthss 1.9.4 (2024/03/07)"
+    },
+    {
+      "path": "chap/copy.tex",
+      "inBundle": false,
+      "sha256": "804472dfca399941f07ae491a465adb5ffbcca9014b8a063133fa07bbfd18b57",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/pkuthss.tds.zip#doc/latex/pkuthss/example/chap/copy.tex",
+      "officialVersion": "pkuthss 1.9.4 (2024/03/07)"
+    },
+    {
+      "path": "chap/origin.tex",
+      "inBundle": false,
+      "sha256": "0521e71f2bfb128dd49b2db474acaf9f83e435352550d443bef1d935db181e5d",
+      "officialUrl": "https://mirrors.ctan.org/install/macros/latex/contrib/pkuthss.tds.zip#doc/latex/pkuthss/example/chap/origin.tex",
+      "officialVersion": "pkuthss 1.9.4 (2024/03/07)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "pkuthss",
+    "ownedPackages": [
+      "biblatex"
+    ],
+    "ownedCommands": [
+      "\\ifblind",
+      "\\blindtrue"
+    ]
+  },
+  "variants": [
+    {
+      "id": "standard",
+      "label": "Standard",
+      "labelZh": "标准",
+      "classOptions": [
+        "UTF8",
+        "fontset=fandol"
+      ]
+    },
+    {
+      "id": "ugly",
+      "label": "Strict school format (ugly)",
+      "labelZh": "严格校规格式（ugly）",
+      "classOptions": [
+        "UTF8",
+        "fontset=fandol",
+        "ugly"
+      ]
+    },
+    {
+      "id": "blind",
+      "label": "Double-blind review",
+      "labelZh": "双盲评审版",
+      "classOptions": [
+        "UTF8",
+        "fontset=fandol"
+      ],
+      "commands": [
+        "\\blindtrue"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "ctex-thesis",
+    "fields": [
+      "title",
+      "authors",
+      "abstract",
+      "keywords"
+    ]
+  },
+  "bibliography": {
+    "system": "biblatex",
+    "style": "caspervector",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\pkuthssinfo",
+      "to": null
+    },
+    {
+      "command": "\\makeblind",
+      "to": null
+    },
+    {
+      "command": "\\specialchap",
+      "to": null
+    },
+    {
+      "command": "\\thssnl",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "FandolSong",
+    "baseSizePt": 12,
+    "lineSpread": 1.5,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "pkuthss.cls": "class",
+    "pkuthss.def": "support",
+    "pkuthss-utf8.def": "support",
+    "pkulogo.pdf": "figure",
+    "pkuword.pdf": "figure",
+    "chap/copy.tex": "support",
+    "chap/origin.tex": "support"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 25,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T12:04:43Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

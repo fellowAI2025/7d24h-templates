@@ -1,0 +1,23 @@
+APS Physical Review Article (REVTeX 4.2) (typage/revtex-aps) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; documents
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  revtex4-2.cls, aps4-2.rtx, aps10pt4-2.rtx, aps11pt4-2.rtx,
+  aps12pt4-2.rtx, apsrmp4-2.rtx, revsymb4-2.sty, ltxutil.sty,
+  ltxfront.sty, ltxgrid.sty, ltxdocext.sty, apsrev4-2.bst, apsrmp4-2.bst
+      The official REVTeX 4.2f (2022/06/05) files of the American Physical
+      Society, Copyright the American Physical Society, under the LaTeX
+      Project Public License, as stated in the file headers. As distributed
+      by CTAN (https://mirrors.ctan.org/install/macros/latex/contrib/revtex.tds.zip;
+      https://ctan.org/pkg/revtex). Redistributed unmodified, so that the
+      template compiles offline; the AIP, AAPM and SOR society files of
+      REVTeX are not included.
+
+The packages the sample loads come from the built-in Tectonic bundle under
+their own licenses. Check https://journals.aps.org/authors for the rules
+that apply to your submission.

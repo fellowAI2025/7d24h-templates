@@ -1,0 +1,111 @@
+% >>> typage-template pkuthss@2026.10.1 variant=standard
+\documentclass[UTF8,fontset=fandol]{pkuthss}
+\usepackage[backend=biber,style=caspervector,utf8,sorting=ecnyt]{biblatex}
+% Double-blind version: the "blind" variant adds \blindtrue below.
+\newif\ifblind
+% <<< typage-template
+\pkuthssinfo{
+  cthesisname = {博士研究生学位论文}, ethesisname = {Doctoral Dissertation},
+  thesiscover = {博士研究生学位论文},
+  ctitle = {论文题目}, etitle = {Thesis Title},
+  cauthor = {作者姓名}, eauthor = {Author Name},
+  date = {二〇二七年六月},
+  studentid = {0000000000}, school = {某某学院},
+  cmajor = {某某专业}, emajor = {Major},
+  direction = {某某方向},
+  cmentor = {导师姓名\ 教授}, ementor = {Prof.\ Supervisor Name},
+  ckeywords = {关键词一，关键词二，关键词三},
+  ekeywords = {keyword one, keyword two, keyword three},
+  degreetype = {1},
+  blindid = {0000000000}, discipline = {某某学科},
+}
+\addbibresource{refs.bib}
+\usepackage{booktabs}
+
+\begin{document}
+
+\frontmatter
+\pagestyle{empty}
+\ifblind\makeblind\else\maketitle\fi
+
+\cleardoublepage
+\input{chap/copy}
+
+\cleardoublepage
+\pagestyle{plain}
+\setcounter{page}{0}
+\pagenumbering{Roman}
+
+\begin{cabstract}
+  用一段话概述研究的问题、方法与主要结论。摘要应当独立成篇，
+不使用引用和未定义的缩写。
+\end{cabstract}
+
+\ifblind\begin{beabstract}\else\begin{eabstract}\fi
+  Summarize the problem, the method and the main results in one
+paragraph. The abstract stands on its own: no citations and no undefined
+abbreviations.
+\ifblind\end{beabstract}\else\end{eabstract}\fi
+
+\tableofcontents
+
+\mainmatter
+
+\chapter{引言}
+\label{chap:intro}
+
+\section{研究背景}
+介绍研究问题的背景与意义，并综述已有工作。引用文献时使用
+\cite{knuth1984texbook,lamport1994latex}。
+
+\section{本文的主要工作}
+列出本文的主要贡献，并说明全文的结构。
+
+\chapter{研究方法}
+\label{chap:method}
+
+描述所用方法。需要引用的公式应当编号，例如
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) .
+\end{equation}
+
+\chapter{实验与分析}
+\label{chap:experiments}
+
+表~\ref{tab:results} 给出了求解式~\eqref{eq:objective} 的结果。
+
+\begin{table}[!htb]
+  \centering
+  \caption{示例数据集上的结果（五次运行的均值 $\pm$ 标准差）}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \toprule
+    方法     & 准确率（\%）     & 时间（s） \\
+    \midrule
+    基线方法 & 81.2 $\pm$ 0.4 & 12.4      \\
+    本文方法 & 84.7 $\pm$ 0.3 & 10.9      \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\chapter{总结与展望}
+总结全文的工作，并指出今后的研究方向。
+
+\printbibliography[heading=bibintoc, title={参考文献}]
+
+\appendix
+
+\chapter{补充材料}
+附录用于放置正文以外的推导、数据与程序说明。
+
+\backmatter
+
+\ifblind\else
+\chapter{致谢}
+感谢导师的指导，以及在研究和论文写作中给予帮助的老师与同学。
+\fi
+
+\input{chap/origin}
+
+\end{document}

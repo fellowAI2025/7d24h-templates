@@ -1,0 +1,60 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "acm-sigconf",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "ACM Conference Paper (acmart sigconf)",
+  "nameZh": "ACM 会议论文（acmart sigconf）",
+  "category": "conference",
+  "tags": [
+    "ACM",
+    "acmart",
+    "sigconf",
+    "two-column"
+  ],
+  "description": "ACM conference paper in the sigconf format with the official acmart 2.20 class and ACM-Reference-Format.bst, unmodified. Variants: anonymous review, final, author draft.",
+  "descriptionZh": "ACM 会议论文（sigconf 格式），使用官方 acmart 2.20 类与 ACM-Reference-Format.bst，未改动。变体：匿名评审、终稿、作者稿。",
+  "license": {
+    "spdx": "CC0-1.0 AND LPPL-1.3c AND LicenseRef-Public-Domain",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://ctan.org/pkg/acmart",
+    "version": "acmart 2.20 (2026/08/16)",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "ACM-Reference-Format.bst",
+      "sha256": "4342d27456645567ef1a027f6474e894715bc31d468f040142fa54540440ad04",
+      "bytes": 94292
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "f866b8ee6a7b312e88915b9c83f4e2bb04813628b5e40b00157fbdbe95bf2549",
+      "bytes": 1277
+    },
+    {
+      "path": "acmart.cls",
+      "sha256": "784c4f2fb07a70d8a797ee9d1c63f441c10fbd2f915c9c615d28cda35c0b742a",
+      "bytes": 121874
+    },
+    {
+      "path": "main.tex",
+      "sha256": "aad34f890127b5ae8f83caae64bf9ff74c247211eb77c767f47ac4cd5301a35b",
+      "bytes": 2538
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "7e013dc24797847e263edfaaf5490c70b5fb7d03a47d86b803dcc140e34ed0ea",
+      "bytes": 3056
+    }
+  ]
+}

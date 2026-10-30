@@ -1,0 +1,24 @@
+Tsinghua University Thesis (ThuThesis) (typage/thuthesis) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; documents
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  thuthesis.cls, thuthesis-*.bst, thuthesis-*.bbx, thuthesis-*.cbx,
+  thu-fig-logo.pdf, thu-text-logo.pdf
+      ThuThesis 7.7.1 (2026/05/26), the Tsinghua University thesis
+      template, Copyright the Tsinghua University TUNA Association (the
+      bibliography styles: Zeping Lee), under the LaTeX Project Public
+      License 1.3c, as stated in the file headers and the project README
+      (https://github.com/tuna/thuthesis). As distributed by CTAN
+      (https://mirrors.ctan.org/install/macros/latex/contrib/thuthesis.tds.zip). Redistributed unmodified, so that the
+      template compiles offline. The logo files show the emblem and name of
+      Tsinghua University, for theses of that university.
+
+The fonts (Fandol) and the other packages come from the built-in Tectonic
+bundle under their own licenses. Check the current requirements of the
+Tsinghua University graduate school or academic affairs office before
+submitting.

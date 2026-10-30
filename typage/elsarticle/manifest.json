@@ -1,0 +1,69 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "elsarticle",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Elsevier Journal Article (elsarticle)",
+  "nameZh": "Elsevier 期刊论文（elsarticle）",
+  "category": "journal",
+  "tags": [
+    "Elsevier",
+    "elsarticle",
+    "journal"
+  ],
+  "description": "Article for Elsevier journals with the official elsarticle 3.5 class and its numeric and author-year BibTeX styles, unmodified. Variants: preprint, review (double-spaced), final 1p, 3p and 5p layouts.",
+  "descriptionZh": "Elsevier 期刊论文，使用官方 elsarticle 3.5 类及其数字与作者-年份 BibTeX 样式，未改动。变体：预印本、评审稿（双倍行距）、终稿 1p / 3p / 5p 版式。",
+  "license": {
+    "spdx": "CC0-1.0 AND LPPL-1.3c",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://ctan.org/pkg/elsarticle",
+    "version": "elsarticle 3.5 (2026/01/09)",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "41d44b39a71559fb1d93ecab7e3229b7fa07047f68cc461640c85e89e98d61e1",
+      "bytes": 1112
+    },
+    {
+      "path": "elsarticle-harv.bst",
+      "sha256": "d85a928515628a9526d1d02f076f723a4da25387286a4f656d8943600880a436",
+      "bytes": 30002
+    },
+    {
+      "path": "elsarticle-num-names.bst",
+      "sha256": "c6c0d83707463ac6ebed7f43a754e38b7a38b17a8e58897e8057f8af0dc35024",
+      "bytes": 28896
+    },
+    {
+      "path": "elsarticle-num.bst",
+      "sha256": "f04dfa2f78d0198ab8e4055b609dc0b91bdb730743cbbd549d84270f20d11394",
+      "bytes": 29462
+    },
+    {
+      "path": "elsarticle.cls",
+      "sha256": "40af0200a8ad6777126f93bf7be6ab3046fa7c3ef1073307f0809703602e59da",
+      "bytes": 45215
+    },
+    {
+      "path": "main.tex",
+      "sha256": "64bedca76014031dc2b7b2c698aafbc70f73e22ec9ce4df3f699d6541fb04985",
+      "bytes": 2304
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "bb9a24a72ecdd9439a7c9bd50f1eec3b9069b69cebdebece990376b6f5adf05e",
+      "bytes": 4216
+    }
+  ]
+}
