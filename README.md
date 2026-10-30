@@ -51,12 +51,45 @@ node tools/validate.mjs
 Merging to `main` runs `.github/workflows/release.yml`: changed templates are
 packed into deterministic zips, previews are rendered, the catalog is
 regenerated and signed (ed25519), and everything is attached to a
-`templates-YYYY.MM.DD` GitHub release. A released template version never
-changes; only its license file may be completed later, which re-publishes the
-same version.
+`templates-YYYY.MM.DD` GitHub release. `.github/workflows/mirror.yml` then
+checks the release (`tools/verify-release.mjs`) and copies the same files to
+the mirror. A released template version never changes; only its license file
+may be completed later, which re-publishes the same version.
+
+Each template is one zip (`<docFormat>-<id>@<version>.zip`), so a single
+template can be downloaded on its own from the release or the mirror.
+Previews (`<zip stem>.thumb.webp`, 360 px wide, and `.page-1..3.webp`) are
+rendered by CI from the compiled sample and published next to the zip; they
+are not part of the zip or the manifest.
 
 The desktop app reads:
 
-- `https://raw.githubusercontent.com/fellowAI2025/7d24h-templates/main/catalog/catalog.v1.json` (+ `.sig`)
-- the zips and previews from the release, or the same files from the mirror
-  `https://www.7d24h.work/downloads/templates/<release tag>/` (files only, no web pages)
+- the catalog: `https://raw.githubusercontent.com/fellowAI2025/7d24h-templates/main/catalog/catalog.v1.json` (+ `.sig`),
+  or `https://www.7d24h.work/downloads/templates/catalog.v1.json` (+ `.sig`)
+- zips and previews: the release, or `https://www.7d24h.work/downloads/templates/<release tag>/`
+  (static files only, no web pages, no directory listing)
+
+### Release setup (once)
+
+Repository secrets:
+
+| secret | what |
+| --- | --- |
+| `CATALOG_SIGNING_KEY` | ed25519 private key (PKCS#8 PEM) from `node tools/keygen.mjs --out <file outside the repo>`; its public key is `catalog/catalog-signing.pub.pem` and is built into the desktop app |
+| `MIRROR_SSH_KEY` | a private SSH key used only for the mirror |
+| `MIRROR_SSH_HOST` | `user@host` of the download server |
+| `MIRROR_SSH_KNOWN_HOSTS` | the server's host key line (`ssh-keyscan -t ed25519 <host>`) |
+
+On the download server the mirror key may only write below
+`~/downloads/templates` (served at `/downloads/templates/`), with rsync's
+restricted wrapper:
+
+```sh
+mkdir -p ~/downloads/templates
+# ~/.ssh/authorized_keys, one line:
+command="rrsync -wo ~/downloads/templates",restrict ssh-ed25519 AAAA... 7d24h-templates-mirror
+```
+
+Without the `MIRROR_*` secrets a release is published on GitHub only and the
+mirror job warns. To upload a release again, run the `mirror` workflow by hand
+with its tag.

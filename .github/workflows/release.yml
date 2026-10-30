@@ -22,6 +22,8 @@ env:
 jobs:
   release:
     runs-on: ubuntu-24.04
+    outputs:
+      tag: ${{ steps.catalog.outputs.tag }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -110,7 +112,12 @@ jobs:
           git commit -m "catalog: $tag [skip ci]"
           git push
 
-      # Mirror for users in China: the same files under
-      # https://www.7d24h.work/downloads/templates/<tag>/ (files only, no pages).
-      # The upload method (credentials, target) is decided with the owner;
-      # until then the desktop app falls back to GitHub only.
+  # The same files for users in China under
+  # https://www.7d24h.work/downloads/templates/<tag>/ (mirror.yml).
+  mirror:
+    needs: release
+    if: needs.release.outputs.tag != ''
+    uses: ./.github/workflows/mirror.yml
+    with:
+      tag: ${{ needs.release.outputs.tag }}
+    secrets: inherit
