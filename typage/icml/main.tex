@@ -1,0 +1,88 @@
+% >>> typage-template icml@2026.10.1 variant=submission
+\documentclass{article}
+% The official kit loads hyperref before icml2026.
+\usepackage{hyperref}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+\usepackage{icml2026}
+% icml2026 selects Times (ptm); under XeTeX that needs the T1 encoding.
+\usepackage[T1]{fontenc}
+\bibliographystyle{icml2026}
+% <<< typage-template
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\icmltitlerunning{Paper Title}
+
+\begin{document}
+
+\twocolumn[
+  \icmltitle{Paper Title}
+
+  \icmlsetsymbol{equal}{*}
+
+  \begin{icmlauthorlist}
+    \icmlauthor{First Author}{equal,uni}
+    \icmlauthor{Second Author}{equal,inst}
+  \end{icmlauthorlist}
+
+  \icmlaffiliation{uni}{Department, University, City, Country}
+  \icmlaffiliation{inst}{Institute, City, Country}
+
+  \icmlcorrespondingauthor{First Author}{first.author@example.com}
+
+  \icmlkeywords{Machine Learning, ICML}
+
+  \vskip 0.3in
+]
+
+\printAffiliationsAndNotice{\icmlEqualContribution}
+
+\begin{abstract}
+State the problem, the approach and the main result in a single
+paragraph.
+\end{abstract}
+
+\section{Introduction}
+Introduce the problem and list the contributions. Cite prior work in
+running text, as in \citet{knuth1984texbook}, or in
+parentheses~\citep{lamport1994latex}.
+
+\section{Method}
+Describe the method. Number the equations you refer to:
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) .
+\end{equation}
+
+\section{Experiments}
+Table~\ref{tab:results} reports the results of
+optimizing~\eqref{eq:objective}. Describe the data, the baselines and the
+compute used, and report the variation across runs.
+
+\begin{table}[!htb]
+  \caption{Results on the example benchmark (mean $\pm$ standard deviation over five runs).}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Method   & Accuracy (\%)  & Time (s) \\
+    \midrule
+    Baseline & 81.2 $\pm$ 0.4 & 12.4     \\
+    Ours     & 84.7 $\pm$ 0.3 & 10.9     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Conclusion}
+Conclude and outline future work.
+
+\section*{Impact Statement}
+Discuss the potential broader impact of the work, as the ICML instructions
+require.
+
+\bibliography{refs}
+
+\end{document}

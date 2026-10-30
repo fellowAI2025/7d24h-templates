@@ -34,6 +34,7 @@ import {
   sha256,
   writeJson,
 } from './lib/common.mjs';
+import { applyVariant, findRegion } from './lib/region.mjs';
 
 const LOG_PROBLEMS = [
   /There were undefined (?:references|citations)/,
@@ -80,24 +81,6 @@ function build(dir, src, out, entry, options, label) {
   return { pages, pdf };
 }
 
-/**
- * The entry with another variant: only the class options of the
- * \documentclass line inside the template region and the marker change,
- * which is what switching variants in the app does.
- */
-function withVariant(text, typage, variant) {
-  const open = /^% >>> typage-template (\S+) variant=[a-z0-9-]+$/m.exec(text);
-  const close = text.indexOf('\n% <<< typage-template', open.index);
-  const region = text
-    .slice(open.index, close)
-    .replace(/^(% >>> typage-template \S+ variant=)[a-z0-9-]+$/m, `$1${variant.id}`)
-    .replace(
-      new RegExp(`\\\\documentclass\\s*(?:\\[[^\\]]*\\])?\\s*\\{${typage.templateRegion.documentClass}\\}`),
-      () => `\\documentclass${variant.classOptions.length ? `[${variant.classOptions.join(',')}]` : ''}{${typage.templateRegion.documentClass}}`
-    );
-  return text.slice(0, open.index) + region + text.slice(close);
-}
-
 function compileTemplate(dir, options) {
   const manifest = readJson(path.join(dir, 'manifest.json'));
   const typage = readJson(path.join(dir, 'typage.json'));
@@ -115,10 +98,10 @@ function compileTemplate(dir, options) {
     // Every other variant must compile too (written next to the entry so
     // relative \input and \bibliography paths still resolve).
     const entryText = readFileSync(path.join(src, typage.entry), 'utf8');
-    const current = /^% >>> typage-template \S+ variant=([a-z0-9-]+)$/m.exec(entryText)?.[1];
+    const current = findRegion(entryText)?.variant;
     for (const variant of typage.variants.filter(item => item.id !== current)) {
       const entry = path.join(path.dirname(typage.entry), `variant-${variant.id}.tex`);
-      writeFileSync(path.join(src, entry), withVariant(entryText, typage, variant));
+      writeFileSync(path.join(src, entry), applyVariant(entryText, typage, variant));
       build(dir, src, path.join(work, `out-${variant.id}`), entry, options, ` variant ${variant.id}`);
     }
 

@@ -20,6 +20,7 @@ import {
   run,
   spdxIds,
 } from './lib/common.mjs';
+import { applyVariant, classLine, packageLine, switchedBy } from './lib/region.mjs';
 import { CATEGORIES, MANIFEST, TYPAGE, validateShape } from './lib/schema.mjs';
 
 const TEXT_FILE = /\.(?:tex|ltx|sty|cls|clo|def|cfg|fd|bst|bib|bbx|cbx|lbx|dbx|rtx|dtx|ins)$/i;
@@ -105,10 +106,19 @@ function checkTypage(dir, manifest, fileHashes, errors, warnings) {
     } else if (close < match.index) {
       errors.push(`${typage.entry}: missing "% <<< typage-template" after the opening marker`);
     } else {
-      if (!variantIds.has(match[1])) errors.push(`${typage.entry}: marker names unknown variant ${match[1]}`);
       const region = text.slice(match.index, close);
-      if (!new RegExp(`\\\\documentclass\\s*(?:\\[[^\\]]*\\])?\\s*\\{${typage.templateRegion.documentClass}\\}`).test(region))
+      if (!classLine(typage.templateRegion.documentClass).test(region))
         errors.push(`${typage.entry}: template region has no \\documentclass{${typage.templateRegion.documentClass}}`);
+      for (const name of switchedBy(typage).packages) {
+        if (!typage.templateRegion.ownedPackages.includes(name))
+          errors.push(`variants: switch options of ${name}, which is not in templateRegion.ownedPackages`);
+        if (!packageLine(name).test(region)) errors.push(`${typage.entry}: template region has no \\usepackage{${name}}`);
+      }
+      const variant = typage.variants.find(item => item.id === match[1]);
+      if (!variant) errors.push(`${typage.entry}: marker names unknown variant ${match[1]}`);
+      // The file is written exactly as switching to its own variant writes it.
+      else if (applyVariant(text, typage, variant) !== text)
+        errors.push(`${typage.entry}: template region does not match variant ${variant.id} (class/package options or switch commands)`);
     }
   }
 

@@ -1,0 +1,129 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "CVPR 2027",
+    "labelZh": "CVPR 2027"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "cvpr.sty",
+      "inBundle": false,
+      "sha256": "ae8e51adc7270b118833b2092310ca1151a19fab0c09b1ab35a485ac4004ac0f",
+      "officialUrl": "https://raw.githubusercontent.com/cvpr-org/author-kit/a2369342011145be8c85e5ad21a9b61f9fa53473/cvpr.sty",
+      "officialVersion": "CVPR2027-v1"
+    },
+    {
+      "path": "ieeenat_fullname.bst",
+      "inBundle": false,
+      "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc",
+      "officialUrl": "https://raw.githubusercontent.com/cvpr-org/author-kit/a2369342011145be8c85e5ad21a9b61f9fa53473/ieeenat_fullname.bst",
+      "officialVersion": "CVPR2027-v1"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "article",
+    "ownedPackages": [
+      "cvpr",
+      "fontenc"
+    ],
+    "ownedCommands": [
+      "\\confName",
+      "\\confYear",
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "review",
+      "label": "Review (anonymous, line numbers)",
+      "labelZh": "评审版（匿名、行号）",
+      "classOptions": [
+        "10pt",
+        "twocolumn",
+        "letterpaper"
+      ],
+      "packageOptions": {
+        "cvpr": [
+          "review"
+        ]
+      }
+    },
+    {
+      "id": "final",
+      "label": "Camera-ready",
+      "labelZh": "终稿",
+      "classOptions": [
+        "10pt",
+        "twocolumn",
+        "letterpaper"
+      ],
+      "packageOptions": {
+        "cvpr": []
+      }
+    },
+    {
+      "id": "arxiv",
+      "label": "arXiv (page numbers)",
+      "labelZh": "arXiv（带页码）",
+      "classOptions": [
+        "10pt",
+        "twocolumn",
+        "letterpaper"
+      ],
+      "packageOptions": {
+        "cvpr": [
+          "pagenumbers"
+        ]
+      }
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "abstract"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "ieeenat_fullname",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Times",
+    "baseSizePt": 10,
+    "lineSpread": 1,
+    "paper": "letter"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "cvpr.sty": "style",
+    "ieeenat_fullname.bst": "bst"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 1,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T11:40:19Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

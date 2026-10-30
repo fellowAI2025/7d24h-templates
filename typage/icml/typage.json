@@ -1,0 +1,179 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "ICML 2026",
+    "labelZh": "ICML 2026"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "icml2026.sty",
+      "inBundle": false,
+      "sha256": "7cdcf90f6a59c5219e7f15c88f7ed09fcaf598dad91e6cdddc4dc3cb0e397a95",
+      "officialUrl": "https://media.icml.cc/Conferences/ICML2026/Styles/icml2026.zip#icml2026.sty",
+      "officialVersion": "2025/10/29 v2.0"
+    },
+    {
+      "path": "icml2026.bst",
+      "inBundle": false,
+      "sha256": "0ec3d5eb9b02efb7e0b44a32f3775882f42a743d0bdc618f34e6936309b98764",
+      "officialUrl": "https://media.icml.cc/Conferences/ICML2026/Styles/icml2026.zip#icml2026.bst",
+      "officialVersion": "ICML 2026"
+    },
+    {
+      "path": "fancyhdr.sty",
+      "inBundle": false,
+      "sha256": "9130c52f91087abc6d223164ffa587e207e3257fcbcd069ef09ecb5391043f14",
+      "officialUrl": "https://media.icml.cc/Conferences/ICML2026/Styles/icml2026.zip#fancyhdr.sty",
+      "officialVersion": "as shipped in the ICML 2026 kit"
+    },
+    {
+      "path": "algorithm.sty",
+      "inBundle": false,
+      "sha256": "93fd0eb31c112eb405833db8f1d7f5d238c7e691b1c05680d7276e68f36d564a",
+      "officialUrl": "https://media.icml.cc/Conferences/ICML2026/Styles/icml2026.zip#algorithm.sty",
+      "officialVersion": "as shipped in the ICML 2026 kit (1996)"
+    },
+    {
+      "path": "algorithmic.sty",
+      "inBundle": false,
+      "sha256": "48d18794a5d97c0479a588cc2eac0917992feb9da83acc4631b8f55757d80f9b",
+      "officialUrl": "https://media.icml.cc/Conferences/ICML2026/Styles/icml2026.zip#algorithmic.sty",
+      "officialVersion": "as shipped in the ICML 2026 kit (1996, modified 2000)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "article",
+    "ownedPackages": [
+      "hyperref",
+      "icml2026",
+      "fontenc"
+    ],
+    "ownedCommands": [
+      "\\theHalgorithm",
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "submission",
+      "label": "Anonymous submission",
+      "labelZh": "匿名投稿",
+      "classOptions": [],
+      "packageOptions": {
+        "icml2026": []
+      }
+    },
+    {
+      "id": "accepted",
+      "label": "Accepted (camera-ready)",
+      "labelZh": "录用终稿",
+      "classOptions": [],
+      "packageOptions": {
+        "icml2026": [
+          "accepted"
+        ]
+      }
+    },
+    {
+      "id": "preprint",
+      "label": "Preprint (arXiv)",
+      "labelZh": "预印本（arXiv）",
+      "classOptions": [],
+      "packageOptions": {
+        "icml2026": [
+          "preprint"
+        ]
+      }
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "abstract",
+      "keywords"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "icml2026",
+    "citation": "author-year",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\icmltitlerunning",
+      "to": null
+    },
+    {
+      "command": "\\icmltitle",
+      "to": null
+    },
+    {
+      "command": "\\icmlsetsymbol",
+      "to": null
+    },
+    {
+      "command": "\\icmlauthor",
+      "to": null
+    },
+    {
+      "command": "\\icmlaffiliation",
+      "to": null
+    },
+    {
+      "command": "\\icmlcorrespondingauthor",
+      "to": null
+    },
+    {
+      "command": "\\icmlkeywords",
+      "to": null
+    },
+    {
+      "command": "\\printAffiliationsAndNotice",
+      "to": null
+    },
+    {
+      "command": "\\icmlEqualContribution",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Times",
+    "baseSizePt": 10,
+    "lineSpread": 1,
+    "paper": "letter"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "icml2026.sty": "style",
+    "icml2026.bst": "bst",
+    "fancyhdr.sty": "support",
+    "algorithm.sty": "support",
+    "algorithmic.sty": "support"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 1,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T11:39:51Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

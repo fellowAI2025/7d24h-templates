@@ -1,0 +1,24 @@
+ICML 2026 Paper (typage/icml) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; papers
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  icml2026.sty, icml2026.bst, fancyhdr.sty, algorithm.sty, algorithmic.sty
+      The official ICML 2026 style kit, published by the International
+      Conference on Machine Learning for authors preparing submissions, in
+      https://media.icml.cc/Conferences/ICML2026/Styles/icml2026.zip
+      icml2026.sty carries no license statement (rights remain with ICML).
+      icml2026.bst (Hal Daume III, generated with makebst by Patrick W Daly)
+      and fancyhdr.sty are under the LaTeX Project Public License, as stated
+      in their headers. algorithm.sty and algorithmic.sty (Peter Williams,
+      1994; algorithmic modified by Alex Smola, 2000) carry a copyright notice
+      and no license statement. All five files are redistributed unmodified,
+      as ICML publishes them, so that the template compiles offline.
+
+The packages the sample loads (natbib, hyperref, ...) come from the
+built-in Tectonic bundle under their own licenses. Check
+https://icml.cc for the rules that apply to your submission.

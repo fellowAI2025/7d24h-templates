@@ -1,0 +1,21 @@
+NeurIPS 2026 Paper (typage/neurips) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; papers
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  neurips_2026.sty, checklist.tex
+      The official NeurIPS 2026 style file (2026-01-29) and paper checklist,
+      published by the Conference on Neural Information Processing Systems
+      for authors preparing submissions, in
+      https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip
+      The files carry no license statement; all rights remain with NeurIPS.
+      They are redistributed unmodified, as published, so that the template
+      compiles offline. Always check the current Call for Papers at
+      https://neurips.cc for the rules that apply to your submission.
+
+The packages the sample loads (natbib, hyperref, ...) come from the
+built-in Tectonic bundle under their own licenses.

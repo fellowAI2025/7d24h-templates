@@ -1,0 +1,69 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "iclr",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "ICLR 2027 Conference Paper",
+  "nameZh": "ICLR 2027 会议论文",
+  "category": "conference",
+  "tags": [
+    "ICLR",
+    "machine learning",
+    "iclr2027"
+  ],
+  "description": "ICLR 2027 conference paper with the official iclr2027_conference.sty and .bst and math_commands.tex from ICLR/Master-Template, unmodified. Variants: anonymous submission and camera-ready (\\iclrfinalcopy).",
+  "descriptionZh": "ICLR 2027 会议论文，使用 ICLR/Master-Template 中的官方 iclr2027_conference.sty、.bst 与 math_commands.tex，未改动。变体：匿名投稿、终稿（\\iclrfinalcopy）。",
+  "license": {
+    "spdx": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://github.com/ICLR/Master-Template/tree/master/iclr2027",
+    "version": "Master-Template 46ed6f4 (2026-09-01)",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "2a683724e4ecbf076d477667fee64e54a04e645d64e5d600e735fc47e9dc96db",
+      "bytes": 1376
+    },
+    {
+      "path": "fancyhdr.sty",
+      "sha256": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea",
+      "bytes": 20521
+    },
+    {
+      "path": "iclr2027_conference.bst",
+      "sha256": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5",
+      "bytes": 26973
+    },
+    {
+      "path": "iclr2027_conference.sty",
+      "sha256": "797deef41724e93761426ac0cbcca46279a91cc650dd1f0ce76a4f08d2098ea6",
+      "bytes": 9025
+    },
+    {
+      "path": "main.tex",
+      "sha256": "6dd67ce5098a7d69fa2119cefbaa8a16725cf901d70d1cd5fa307792dde59280",
+      "bytes": 1991
+    },
+    {
+      "path": "math_commands.tex",
+      "sha256": "90473c4d0542070db244cea73ef962d6cddc5b2a746757e6a40ddf5fdfb90ba9",
+      "bytes": 12284
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "719100ae5ba9a4a862e01c3cc01b66f1e4a47731e4a0fddfedfcf99d7ee3a2e6",
+      "bytes": 3369
+    }
+  ]
+}

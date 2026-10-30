@@ -1,0 +1,62 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "acl",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "ACL / ARR Paper",
+  "nameZh": "ACL / ARR 论文",
+  "category": "conference",
+  "tags": [
+    "ACL",
+    "ARR",
+    "NLP",
+    "EMNLP",
+    "NAACL",
+    "two-column"
+  ],
+  "description": "Paper for ACL Rolling Review and the *ACL conferences (ACL, EMNLP, NAACL, EACL, ...) with the official acl.sty and acl_natbib.bst from acl-org/acl-style-files, unmodified. Variants: review (anonymous, line numbers), final, preprint.",
+  "descriptionZh": "用于 ACL Rolling Review 与 *ACL 系列会议（ACL、EMNLP、NAACL、EACL 等）的论文，使用 acl-org/acl-style-files 中的官方 acl.sty 与 acl_natbib.bst，未改动。变体：评审版（匿名、行号）、终稿、预印本。",
+  "license": {
+    "spdx": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://github.com/acl-org/acl-style-files",
+    "version": "acl-style-files d5adc82 (2026-06-29)",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "e624e72b21ff9a626a9d7de0fe9bc09c23d6bda54146b9d91364b78fbb58eee0",
+      "bytes": 1173
+    },
+    {
+      "path": "acl.sty",
+      "sha256": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de",
+      "bytes": 11615
+    },
+    {
+      "path": "acl_natbib.bst",
+      "sha256": "6fbb306202290f4b68e74ac1460a8b27398500cb6dfeb4492e74c457eae7cd1e",
+      "bytes": 45442
+    },
+    {
+      "path": "main.tex",
+      "sha256": "8467509a644abef49d5b1ee62531d88e7d77a193aa7358513450727b13dd7152",
+      "bytes": 1961
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "05dcef8d54c2f684d7685d3c28f92dd8446894172c3f2ca701198fdac0d11118",
+      "bytes": 2893
+    }
+  ]
+}

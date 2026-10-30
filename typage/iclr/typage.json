@@ -1,0 +1,126 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "ICLR 2027",
+    "labelZh": "ICLR 2027"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "iclr2027_conference.sty",
+      "inBundle": false,
+      "sha256": "797deef41724e93761426ac0cbcca46279a91cc650dd1f0ce76a4f08d2098ea6",
+      "officialUrl": "https://raw.githubusercontent.com/ICLR/Master-Template/46ed6f4c6cef5b175dde23639e77d44c3463b230/iclr2027/iclr2027_conference.sty",
+      "officialVersion": "ICLR 2027 (46ed6f4)"
+    },
+    {
+      "path": "iclr2027_conference.bst",
+      "inBundle": false,
+      "sha256": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5",
+      "officialUrl": "https://raw.githubusercontent.com/ICLR/Master-Template/46ed6f4c6cef5b175dde23639e77d44c3463b230/iclr2027/iclr2027_conference.bst",
+      "officialVersion": "ICLR 2027 (46ed6f4)"
+    },
+    {
+      "path": "math_commands.tex",
+      "inBundle": false,
+      "sha256": "90473c4d0542070db244cea73ef962d6cddc5b2a746757e6a40ddf5fdfb90ba9",
+      "officialUrl": "https://raw.githubusercontent.com/ICLR/Master-Template/46ed6f4c6cef5b175dde23639e77d44c3463b230/iclr2027/math_commands.tex",
+      "officialVersion": "ICLR 2027 (46ed6f4)"
+    },
+    {
+      "path": "fancyhdr.sty",
+      "inBundle": false,
+      "sha256": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea",
+      "officialUrl": "https://raw.githubusercontent.com/ICLR/Master-Template/46ed6f4c6cef5b175dde23639e77d44c3463b230/iclr2027/fancyhdr.sty",
+      "officialVersion": "3.2, as shipped in ICLR 2027 (46ed6f4)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "article",
+    "ownedPackages": [
+      "iclr2027_conference",
+      "times",
+      "fontenc"
+    ],
+    "ownedCommands": [
+      "\\bibliographystyle",
+      "\\iclrfinalcopy"
+    ]
+  },
+  "variants": [
+    {
+      "id": "submission",
+      "label": "Anonymous submission",
+      "labelZh": "匿名投稿",
+      "classOptions": []
+    },
+    {
+      "id": "final",
+      "label": "Camera-ready",
+      "labelZh": "终稿",
+      "classOptions": [],
+      "commands": [
+        "\\iclrfinalcopy"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "abstract"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "iclr2027_conference",
+    "citation": "author-year",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\And",
+      "to": null
+    },
+    {
+      "command": "\\AND",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Times",
+    "baseSizePt": 10,
+    "lineSpread": 1,
+    "paper": "letter"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "iclr2027_conference.sty": "style",
+    "iclr2027_conference.bst": "bst",
+    "math_commands.tex": "support",
+    "fancyhdr.sty": "support"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 1,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T11:39:57Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

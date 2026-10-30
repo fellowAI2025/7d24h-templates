@@ -38,6 +38,12 @@ A venue's class, style and `.bst` files are used exactly as published:
 
 Record `sha256`, `officialUrl` and `officialVersion`. CI checks the hashes and
 `tools/check-official.mjs` compares them with the official address weekly.
+When the venue publishes only a zip, the address is `<zip url>#<file in the
+zip>`; for a GitHub repository, use the raw address at a fixed commit. Ship
+the support files of the official kit as published too (they are official
+files); leave out a file whose own notice forbids distributing it on its own
+(ICLR's `natbib.sty` requires `natbib.dtx`) and let the bundle provide that
+package, and say so in the template's `LICENSE`.
 If the official files do not compile with Tectonic, change only the sample;
 if that is not enough the venue is not a system template ("official, obtain
 it yourself" in the app).
@@ -57,8 +63,13 @@ it yourself" in the app).
   the user switches templates. List the class, owned packages and owned
   commands in `typage.json` `templateRegion`.
 - Variants (submission / camera-ready, anonymous, paper size, one / two
-  columns) only change the class options of the `\documentclass` line, using
-  options the class itself supports. CI compiles every variant.
+  columns) change only what the class or venue style itself offers, inside
+  the region: the `\documentclass` options (`classOptions`), the options of
+  an owned style package (`packageOptions`, e.g.
+  `{"neurips_2026": ["main", "final"]}`), or an argument-less switch command
+  on its own line at the end of the region (`commands`, e.g.
+  `["\\iclrfinalcopy"]`). The entry file is written exactly in the form of
+  its marker's variant. CI compiles every variant.
 - Keep front matter fields together and written the standard way for the
   class, so the app recognizes title, authors, affiliations, e-mails,
   abstract and keywords.

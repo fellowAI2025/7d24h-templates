@@ -12,6 +12,8 @@ const ISO = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/;
 const URL = /^https:\/\/[^\s]+$/;
 const REL_PATH = /^(?!\/)(?!.*(?:^|\/)\.\.?(?:\/|$))[A-Za-z0-9_\-./]+$/;
 const TEX_COMMAND = /^\\[A-Za-z@]+\*?$/;
+const PACKAGE = /^[A-Za-z0-9_-]+$/;
+const OPTION = /^[A-Za-z0-9=.,_-]+$/;
 
 const str = (max, pattern) => ({ type: 'string', max, pattern });
 const nullable = spec => ({ ...spec, nullable: true });
@@ -174,8 +176,8 @@ export const TYPAGE = object({
     200
   ),
   templateRegion: object({
-    documentClass: str(60, /^[A-Za-z0-9-]+$/),
-    ownedPackages: arrayOf(str(60, /^[A-Za-z0-9-]+$/), 60),
+    documentClass: str(60, PACKAGE),
+    ownedPackages: arrayOf(str(60, PACKAGE), 60),
     ownedCommands: arrayOf(str(60, TEX_COMMAND), 60),
   }),
   variants: arrayOf(
@@ -183,7 +185,12 @@ export const TYPAGE = object({
       id: str(40, ID),
       label: str(60),
       labelZh: str(60),
-      classOptions: arrayOf(str(60, /^[A-Za-z0-9=.,_-]+$/), 20),
+      classOptions: arrayOf(str(60, OPTION), 20),
+      // Venue styles switch review / final with package options
+      // (\usepackage[final]{neurips_2026}) or an argument-less command on its
+      // own line in the template region (\iclrfinalcopy).
+      packageOptions: optional(mapOf(str(60, PACKAGE), arrayOf(str(60, OPTION), 20), 4)),
+      commands: optional(arrayOf(str(60, TEX_COMMAND), 8)),
     }),
     12
   ),

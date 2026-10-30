@@ -1,0 +1,125 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "NeurIPS 2026",
+    "labelZh": "NeurIPS 2026"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "neurips_2026.sty",
+      "inBundle": false,
+      "sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
+      "officialUrl": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip#neurips_2026.sty",
+      "officialVersion": "2026-01-29"
+    },
+    {
+      "path": "checklist.tex",
+      "inBundle": false,
+      "sha256": "780ba13c480f652dcc42e69ed61a752ce0ea270f15d332d4a45b059dabad84f6",
+      "officialUrl": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip#checklist.tex",
+      "officialVersion": "NeurIPS 2026 (formatting zip of 2026-06-23)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "article",
+    "ownedPackages": [
+      "neurips_2026",
+      "fontenc"
+    ],
+    "ownedCommands": [
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "submission",
+      "label": "Anonymous submission (main track)",
+      "labelZh": "匿名投稿（主会）",
+      "classOptions": [],
+      "packageOptions": {
+        "neurips_2026": []
+      }
+    },
+    {
+      "id": "final",
+      "label": "Camera-ready (main track)",
+      "labelZh": "终稿（主会）",
+      "classOptions": [],
+      "packageOptions": {
+        "neurips_2026": [
+          "main",
+          "final"
+        ]
+      }
+    },
+    {
+      "id": "preprint",
+      "label": "Preprint (arXiv)",
+      "labelZh": "预印本（arXiv）",
+      "classOptions": [],
+      "packageOptions": {
+        "neurips_2026": [
+          "preprint"
+        ]
+      }
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "abstract"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "plainnat",
+    "citation": "author-year",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\And",
+      "to": null
+    },
+    {
+      "command": "\\AND",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Times",
+    "baseSizePt": 10,
+    "lineSpread": 1,
+    "paper": "letter"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "neurips_2026.sty": "style",
+    "checklist.tex": "support"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 9,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T11:39:42Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

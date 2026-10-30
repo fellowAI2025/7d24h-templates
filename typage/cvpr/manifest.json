@@ -1,0 +1,60 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "cvpr",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "CVPR 2027 Paper",
+  "nameZh": "CVPR 2027 论文",
+  "category": "conference",
+  "tags": [
+    "CVPR",
+    "computer vision",
+    "IEEE/CVF",
+    "two-column"
+  ],
+  "description": "CVPR 2027 paper with the official cvpr.sty and ieeenat_fullname.bst from the cvpr-org author kit (release CVPR2027-v1), unmodified. Variants: review (anonymous, line numbers), camera-ready, arXiv (page numbers).",
+  "descriptionZh": "CVPR 2027 论文，使用 cvpr-org 作者工具包（发布 CVPR2027-v1）中的官方 cvpr.sty 与 ieeenat_fullname.bst，未改动。变体：评审版（匿名、行号）、终稿、arXiv（带页码）。",
+  "license": {
+    "spdx": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://github.com/cvpr-org/author-kit/releases/tag/CVPR2027-v1",
+    "version": "author-kit CVPR2027-v1",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "3a086b77bb2b6b74160531e46514464ceeec94babc52b78235baf141064aa8b8",
+      "bytes": 1024
+    },
+    {
+      "path": "cvpr.sty",
+      "sha256": "ae8e51adc7270b118833b2092310ca1151a19fab0c09b1ab35a485ac4004ac0f",
+      "bytes": 17883
+    },
+    {
+      "path": "ieeenat_fullname.bst",
+      "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc",
+      "bytes": 26900
+    },
+    {
+      "path": "main.tex",
+      "sha256": "0ffa254cb62df9f2488a1210c8006b3c5b77b724d8af2f1906f9c3f62f0c18ae",
+      "bytes": 1959
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "ead64c9e261b3a71e84f0f63a513a89fac0c11c7e04f20e68db1a90c2718b03a",
+      "bytes": 2896
+    }
+  ]
+}

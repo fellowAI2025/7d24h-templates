@@ -1,0 +1,59 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "neurips",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "NeurIPS 2026 Paper",
+  "nameZh": "NeurIPS 2026 论文",
+  "category": "conference",
+  "tags": [
+    "NeurIPS",
+    "machine learning",
+    "neurips_2026"
+  ],
+  "description": "NeurIPS 2026 paper with the official neurips_2026.sty (2026-01-29) and the NeurIPS paper checklist, both unmodified from the official formatting-instructions zip. Variants: anonymous submission, camera-ready, preprint.",
+  "descriptionZh": "NeurIPS 2026 论文，使用官方 neurips_2026.sty（2026-01-29）与 NeurIPS 论文自查表，均取自官方格式说明 zip，未改动。变体：匿名投稿、终稿、预印本。",
+  "license": {
+    "spdx": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+    "version": "neurips_2026.sty 2026-01-29",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "b498ad27e7dd8e4889ceb8b0b9a5eaebc0fae780efdf103f1ba04aebd65d8357",
+      "bytes": 1086
+    },
+    {
+      "path": "checklist.tex",
+      "sha256": "780ba13c480f652dcc42e69ed61a752ce0ea270f15d332d4a45b059dabad84f6",
+      "bytes": 26167
+    },
+    {
+      "path": "main.tex",
+      "sha256": "f10c86439fd9b9f18bf38ecf539696174992d8ff4d6364968e76d633e24ee6b4",
+      "bytes": 2236
+    },
+    {
+      "path": "neurips_2026.sty",
+      "sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
+      "bytes": 13704
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "60057adcb5f4449bae43baa256721198cd01450c20c15147f070ca593cba454d",
+      "bytes": 2879
+    }
+  ]
+}

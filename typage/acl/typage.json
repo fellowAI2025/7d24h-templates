@@ -1,0 +1,131 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "ACL Rolling Review",
+    "labelZh": "ACL Rolling Review"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "acl.sty",
+      "inBundle": false,
+      "sha256": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de",
+      "officialUrl": "https://raw.githubusercontent.com/acl-org/acl-style-files/d5adc823ff0f80f98c80405ca0ab66c68e684409/acl.sty",
+      "officialVersion": "acl-style-files d5adc82"
+    },
+    {
+      "path": "acl_natbib.bst",
+      "inBundle": false,
+      "sha256": "6fbb306202290f4b68e74ac1460a8b27398500cb6dfeb4492e74c457eae7cd1e",
+      "officialUrl": "https://raw.githubusercontent.com/acl-org/acl-style-files/d5adc823ff0f80f98c80405ca0ab66c68e684409/acl_natbib.bst",
+      "officialVersion": "acl-style-files d5adc82"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "article",
+    "ownedPackages": [
+      "acl",
+      "times",
+      "latexsym",
+      "fontenc",
+      "inconsolata"
+    ],
+    "ownedCommands": []
+  },
+  "variants": [
+    {
+      "id": "review",
+      "label": "Review (anonymous, line numbers)",
+      "labelZh": "评审版（匿名、行号）",
+      "classOptions": [
+        "11pt"
+      ],
+      "packageOptions": {
+        "acl": [
+          "review"
+        ]
+      }
+    },
+    {
+      "id": "final",
+      "label": "Final (camera-ready)",
+      "labelZh": "终稿",
+      "classOptions": [
+        "11pt"
+      ],
+      "packageOptions": {
+        "acl": []
+      }
+    },
+    {
+      "id": "preprint",
+      "label": "Preprint (page numbers)",
+      "labelZh": "预印本（带页码）",
+      "classOptions": [
+        "11pt"
+      ],
+      "packageOptions": {
+        "acl": [
+          "preprint"
+        ]
+      }
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "abstract"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "acl_natbib",
+    "citation": "author-year",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\And",
+      "to": null
+    },
+    {
+      "command": "\\AND",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Times",
+    "baseSizePt": 11,
+    "lineSpread": 1,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib",
+    "acl.sty": "style",
+    "acl_natbib.bst": "bst"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 1,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T11:40:09Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

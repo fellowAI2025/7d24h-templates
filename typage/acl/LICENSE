@@ -1,0 +1,23 @@
+ACL / ARR Paper (typage/acl) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; papers
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  acl.sty, acl_natbib.bst
+      The official style files of the Association for Computational
+      Linguistics, from https://github.com/acl-org/acl-style-files (commit
+      d5adc823ff0f80f98c80405ca0ab66c68e684409).
+      acl.sty carries no license statement (rights remain with the ACL and
+      the authors named in the file). acl_natbib.bst (modifications by Norman
+      Gray, based on natbib's styles by Patrick W Daly) is under the LaTeX
+      Project Public License, as stated in its header. Both files are
+      redistributed unmodified, so that the template compiles offline.
+
+The packages the sample loads (times, inconsolata, natbib, ...) come from
+the built-in Tectonic bundle under their own licenses. Check the current
+call for papers and https://acl-org.github.io/ACLPUB/ for the rules that
+apply to your submission.

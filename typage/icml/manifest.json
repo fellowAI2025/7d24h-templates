@@ -1,0 +1,75 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "icml",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "ICML 2026 Paper",
+  "nameZh": "ICML 2026 论文",
+  "category": "conference",
+  "tags": [
+    "ICML",
+    "machine learning",
+    "icml2026",
+    "two-column"
+  ],
+  "description": "ICML 2026 paper with the official icml2026.sty (2025/10/29 v2.0), icml2026.bst and the support files of the official style kit, all unmodified. Variants: anonymous submission, accepted (camera-ready), preprint.",
+  "descriptionZh": "ICML 2026 论文，使用官方 icml2026.sty（2025/10/29 v2.0）、icml2026.bst 及官方样式包附带的支持文件，均未改动。变体：匿名投稿、录用终稿、预印本。",
+  "license": {
+    "spdx": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://icml.cc/Conferences/2026/AuthorInstructions",
+    "version": "icml2026.sty 2025/10/29 v2.0",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "04883cc4dfe42167af6da005d5326155026f56431cf05f11383a256efc0b21ac",
+      "bytes": 1346
+    },
+    {
+      "path": "algorithm.sty",
+      "sha256": "93fd0eb31c112eb405833db8f1d7f5d238c7e691b1c05680d7276e68f36d564a",
+      "bytes": 2223
+    },
+    {
+      "path": "algorithmic.sty",
+      "sha256": "48d18794a5d97c0479a588cc2eac0917992feb9da83acc4631b8f55757d80f9b",
+      "bytes": 7414
+    },
+    {
+      "path": "fancyhdr.sty",
+      "sha256": "9130c52f91087abc6d223164ffa587e207e3257fcbcd069ef09ecb5391043f14",
+      "bytes": 31715
+    },
+    {
+      "path": "icml2026.bst",
+      "sha256": "0ec3d5eb9b02efb7e0b44a32f3775882f42a743d0bdc618f34e6936309b98764",
+      "bytes": 27147
+    },
+    {
+      "path": "icml2026.sty",
+      "sha256": "7cdcf90f6a59c5219e7f15c88f7ed09fcaf598dad91e6cdddc4dc3cb0e397a95",
+      "bytes": 27344
+    },
+    {
+      "path": "main.tex",
+      "sha256": "92782641cc2c8a9b171325fbddcb9b73261e6ea02cb43cccced1ca3b60b62621",
+      "bytes": 2304
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "94e587e9ee62797a543feaa3be91e5d9761f4e8e1c07ebffdacabd5291a2e3d2",
+      "bytes": 4340
+    }
+  ]
+}

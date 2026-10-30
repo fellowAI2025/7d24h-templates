@@ -1,0 +1,21 @@
+CVPR 2027 Paper (typage/cvpr) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; papers
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  cvpr.sty, ieeenat_fullname.bst
+      The official CVPR 2027 author kit, published by the CVPR organizers in
+      https://github.com/cvpr-org/author-kit (release CVPR2027-v1, commit
+      a2369342011145be8c85e5ad21a9b61f9fa53473).
+      The files carry no license statement; rights remain with their
+      authors. They are redistributed unmodified, so that the template
+      compiles offline. The full kit (rebuttal template, supplementary
+      material, formatting instructions) is in the repository above.
+
+The packages the sample loads come from the built-in Tectonic bundle under
+their own licenses. Check https://cvpr.thecvf.com for the rules that apply
+to your submission.

@@ -1,0 +1,26 @@
+ICLR 2027 Conference Paper (typage/iclr) - license
+
+This template contains files from two sources.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; papers
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  iclr2027_conference.sty, iclr2027_conference.bst, math_commands.tex,
+  fancyhdr.sty
+      The official ICLR 2027 template, published by the International
+      Conference on Learning Representations for authors in
+      https://github.com/ICLR/Master-Template (directory iclr2027, commit
+      46ed6f4c6cef5b175dde23639e77d44c3463b230).
+      The style file and math_commands.tex carry no license statement
+      (rights remain with ICLR); iclr2027_conference.bst (generated with
+      makebst by Patrick W Daly) and fancyhdr.sty 3.2 are under the LaTeX
+      Project Public License, as stated in their headers. All four files are
+      redistributed unmodified, so that the template compiles offline.
+
+  Not included: the copy of natbib.sty in the official directory. Its header
+  allows distribution only together with natbib.dtx, so the template uses
+  natbib 8.31b from the built-in Tectonic bundle instead (same 8.31 series).
+  The other packages the sample loads also come from the bundle under their
+  own licenses.

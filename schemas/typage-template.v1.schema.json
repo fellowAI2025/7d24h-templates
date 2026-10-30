@@ -145,7 +145,7 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 60,
-          "pattern": "^[A-Za-z0-9-]+$"
+          "pattern": "^[A-Za-z0-9_-]+$"
         },
         "ownedPackages": {
           "type": "array",
@@ -153,7 +153,7 @@
             "type": "string",
             "minLength": 1,
             "maxLength": 60,
-            "pattern": "^[A-Za-z0-9-]+$"
+            "pattern": "^[A-Za-z0-9_-]+$"
           },
           "maxItems": 60
         },
@@ -205,6 +205,36 @@
               "pattern": "^[A-Za-z0-9=.,_-]+$"
             },
             "maxItems": 20
+          },
+          "packageOptions": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 60,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60,
+                "pattern": "^[A-Za-z0-9=.,_-]+$"
+              },
+              "maxItems": 20
+            },
+            "maxProperties": 4
+          },
+          "commands": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 60,
+              "pattern": "^\\\\[A-Za-z@]+\\*?$"
+            },
+            "maxItems": 8
           }
         },
         "required": [

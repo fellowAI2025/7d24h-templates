@@ -3,7 +3,7 @@
 // when it is smaller. Same inputs give the same entries on every machine
 // (the deflate bytes follow the bundled zlib, so released versions are
 // compared by content, not by zip hash; see catalog.mjs).
-import { crc32, deflateRawSync } from 'node:zlib';
+import { crc32, deflateRawSync, inflateRawSync } from 'node:zlib';
 
 const DOS_TIME = 0;
 const DOS_DATE = (1 << 5) | 1;
@@ -62,4 +62,33 @@ export function buildZip(entries) {
   end.writeUInt32LE(centralBytes.length, 12);
   end.writeUInt32LE(offset, 16);
   return Buffer.concat([...parts, centralBytes, end]);
+}
+
+/**
+ * One member of a zip (stored or deflated), or null when it is not there.
+ * Enough for venues that publish their style files only as a zip.
+ */
+export function readZipEntry(zip, name) {
+  const eocd = zip.lastIndexOf(Buffer.from([0x50, 0x4b, 0x05, 0x06]));
+  if (eocd < 0) throw new Error('not a zip file');
+  const count = zip.readUInt16LE(eocd + 10);
+  let at = zip.readUInt32LE(eocd + 16);
+  for (let i = 0; i < count; i++) {
+    if (zip.readUInt32LE(at) !== 0x02014b50) throw new Error('bad central directory');
+    const method = zip.readUInt16LE(at + 10);
+    const size = zip.readUInt32LE(at + 20);
+    const nameLength = zip.readUInt16LE(at + 28);
+    const extraLength = zip.readUInt16LE(at + 30);
+    const commentLength = zip.readUInt16LE(at + 32);
+    const local = zip.readUInt32LE(at + 42);
+    if (zip.toString('utf8', at + 46, at + 46 + nameLength) === name) {
+      const start = local + 30 + zip.readUInt16LE(local + 26) + zip.readUInt16LE(local + 28);
+      const data = zip.subarray(start, start + size);
+      if (method === 0) return Buffer.from(data);
+      if (method === 8) return inflateRawSync(data);
+      throw new Error(`${name}: unsupported compression method ${method}`);
+    }
+    at += 46 + nameLength + extraLength + commentLength;
+  }
+  return null;
 }
