@@ -1,0 +1,49 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "ieee-journal",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "IEEE Journal Article (IEEEtran)",
+  "nameZh": "IEEE 期刊论文（IEEEtran）",
+  "category": "journal",
+  "tags": [
+    "IEEE",
+    "IEEEtran",
+    "transactions"
+  ],
+  "description": "IEEE journal / transactions article with the official IEEEtran class and IEEEtran.bst 1.8b / 1.14, used unmodified from the built-in bundle.",
+  "descriptionZh": "IEEE 期刊论文，使用官方 IEEEtran 类与 IEEEtran.bst（1.8b / 1.14），取自内置 bundle，未改动。",
+  "license": {
+    "spdx": "CC0-1.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://ctan.org/pkg/ieeetran",
+    "version": "IEEEtran 1.8b",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "27f592bfbeaefe70d50eca102df2875b56888f2e9587afd90cc66930aa38c3ee",
+      "bytes": 886
+    },
+    {
+      "path": "main.tex",
+      "sha256": "fc8e43279c0e38977f5c7a56381d7c03d9c389591ded59886a736a278d7b514e",
+      "bytes": 2145
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "e7723ffcffbe750e061a922d9dd10ad6c9ae6b4bb86ddce8fc8215ea77d75fd8",
+      "bytes": 2405
+    }
+  ]
+}

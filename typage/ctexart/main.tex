@@ -1,0 +1,56 @@
+% >>> typage-template ctexart@2026.10.1 variant=xiaosi
+\documentclass[UTF8,fontset=fandol,zihao=-4,a4paper]{ctexart}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{gbt7714}
+\bibliographystyle{gbt7714-numerical}
+% <<< typage-template
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\title{论文标题}
+\author{第一作者\thanks{某大学某学院，\texttt{first.author@example.com}} \and 第二作者\thanks{某研究所}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+用几句话说明研究问题、方法和主要结论。
+\end{abstract}
+
+\section{引言}
+介绍研究背景与问题，列出本文的贡献。中文排版的基本用法可参考文献\cite{liu2013latex}，
+\LaTeX{} 的通用约定见文献\cite{lamport1994latex}。
+
+\section{方法}
+给需要引用的公式编号：
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) + \lambda \lVert \theta \rVert_2^2 .
+\end{equation}
+式~\eqref{eq:objective} 是训练目标。
+
+\section{实验结果}
+表~\ref{tab:results} 汇总了实验结果。
+
+\begin{table}[htbp]
+  \centering
+  \caption{示例数据集上的结果}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \toprule
+    方法     & 准确率（\%） & 用时（秒） \\
+    \midrule
+    基线方法 & 81.2         & 12.4       \\
+    本文方法 & 84.7         & 10.9       \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{结论}
+总结全文并展望后续工作。
+
+\bibliography{refs}
+\end{document}

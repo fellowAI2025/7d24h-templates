@@ -1,0 +1,43 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "cv",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Academic CV",
+  "nameZh": "学术简历（CV）",
+  "category": "slides-cv",
+  "tags": [
+    "CV",
+    "resume"
+  ],
+  "description": "A one-column academic CV: contact line, research interests, education, positions, publications, teaching, awards and service.",
+  "descriptionZh": "单栏学术简历：联系方式、研究方向、教育经历、工作经历、论文、教学、奖项与学术服务。",
+  "license": {
+    "spdx": "CC0-1.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "7d24h",
+    "url": null,
+    "version": null,
+    "retrievedAt": null
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "a2c57041a6521ef50136b204b243d6c895b68e2f9f0142ad8d1d5c2cc275456d",
+      "bytes": 720
+    },
+    {
+      "path": "main.tex",
+      "sha256": "8d8f7b7b7bc87d0e038f12e517dfdcd1c8f6428ac7296ad5de433057f894f110",
+      "bytes": 1390
+    },
+    {
+      "path": "typage.json",
+      "sha256": "68571b303acdf4622b2e874e8cc96128340d9e441ddf14494d8df0ee546d45d4",
+      "bytes": 1490
+    }
+  ]
+}

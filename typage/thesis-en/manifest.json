@@ -1,0 +1,49 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "thesis-en",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Thesis (English, generic)",
+  "nameZh": "英文学位论文（通用）",
+  "category": "thesis",
+  "tags": [
+    "thesis",
+    "book",
+    "English"
+  ],
+  "description": "A generic English thesis on the book class: title page, abstract, acknowledgements, contents, chapters, appendix and references; one- or two-sided.",
+  "descriptionZh": "基于 book 类的通用英文学位论文：标题页、摘要、致谢、目录、章节、附录与参考文献；单面或双面。",
+  "license": {
+    "spdx": "CC0-1.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "7d24h",
+    "url": null,
+    "version": null,
+    "retrievedAt": null
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "20175e926a3b8e73226571b9ff1dd799954267a6957a6b2e2278960d41a1681f",
+      "bytes": 767
+    },
+    {
+      "path": "main.tex",
+      "sha256": "ce14616de4a723e6277761f5ba2446045f04c53fb9cb53cb6a110c5ec981457d",
+      "bytes": 2283
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "4bc0af978876c1e92852ead552000f8933528cd9e395edfa00e511d3812102ad",
+      "bytes": 1935
+    }
+  ]
+}

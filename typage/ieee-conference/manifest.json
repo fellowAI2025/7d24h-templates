@@ -1,0 +1,49 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "ieee-conference",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "IEEE Conference Paper (IEEEtran)",
+  "nameZh": "IEEE 会议论文（IEEEtran）",
+  "category": "conference",
+  "tags": [
+    "IEEE",
+    "IEEEtran",
+    "two-column"
+  ],
+  "description": "IEEE conference paper with the official IEEEtran class and IEEEtran.bst 1.8b / 1.14, used unmodified from the built-in bundle.",
+  "descriptionZh": "IEEE 会议论文，使用官方 IEEEtran 类与 IEEEtran.bst（1.8b / 1.14），取自内置 bundle，未改动。",
+  "license": {
+    "spdx": "CC0-1.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://ctan.org/pkg/ieeetran",
+    "version": "IEEEtran 1.8b",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "964aa2a580fd37b90ab2598aa5e88ffa967087147a4cabd5dfc99838a50d3d84",
+      "bytes": 890
+    },
+    {
+      "path": "main.tex",
+      "sha256": "3cecc5d45445ee47ab44d660be907e0ff178bb7dc7ddf453611f1afbf7d357d7",
+      "bytes": 1881
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "typage.json",
+      "sha256": "3be5028418c74fc76a8141484bcae85f4923189b88ef9bce81da074e2f36216d",
+      "bytes": 2434
+    }
+  ]
+}

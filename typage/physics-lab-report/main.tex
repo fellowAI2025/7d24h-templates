@@ -1,0 +1,143 @@
+% >>> typage-template physics-lab-report@2026.10.1 variant=boxed
+\documentclass[boxed]{physlab}
+% <<< typage-template
+\usepackage{amsmath}
+\usepackage{siunitx}
+\sisetup{per-mode = symbol, uncertainty-mode = separate}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\school{华中科技大学}
+\title{霍尔效应}
+\author{张三}
+\studentid{U202600001}
+\classname{物理 2601 班}
+\date{2026 年 10 月 30 日}
+\partner{李四}
+\expno{8}
+\cabinet{}
+\room{}
+
+\begin{document}
+\maketitle
+
+\section{实验目的}
+\begin{enumerate}
+  \item 了解霍尔效应的原理以及霍尔元件有关参数的含义和作用。
+  \item 测绘霍尔电压与工作电流的关系曲线，学习用对称测量法消除副效应的影响。
+  \item 确定样品的导电类型、载流子浓度、电导率和迁移率。
+\end{enumerate}
+
+\section{实验原理}
+厚度为 $d$ 的半导体薄片沿 $x$ 方向通以工作电流 $I_S$，沿 $z$ 方向加磁场 $B$ 时，
+载流子受洛伦兹力偏转，在 $y$ 方向两侧产生霍尔电压
+\begin{equation}
+  \label{eq:hall}
+  V_H = R_H \frac{I_S B}{d}, \qquad R_H = \frac{1}{ne},
+\end{equation}
+其中 $R_H$ 为霍尔系数，$n$ 为载流子浓度。样品的电导率与迁移率为
+\begin{equation}
+  \label{eq:sigma}
+  \sigma = \frac{I_S L}{U_\sigma\, a d}, \qquad \mu = \lvert R_H \rvert\, \sigma ,
+\end{equation}
+式中 $L$ 为测电导率的两电极间距，$a$ 为样品宽度，$U_\sigma$ 为两电极间的电压。
+
+\section{实验仪器}
+霍尔效应实验仪（含电磁铁与霍尔样品）、霍尔效应测试仪、导线若干。
+
+\section{实验内容与步骤}
+\begin{enumerate}
+  \item 按说明书连接线路，预热仪器，将霍尔样品置于电磁铁气隙中心。
+  \item 保持励磁电流不变（$B = \qty{0.100}{\tesla}$），改变工作电流 $I_S$，
+        对每个 $I_S$ 依次改变 $B$ 与 $I_S$ 的方向，测得 $V_1 \sim V_4$。
+  \item 在零磁场下测量电导率电极间的电压 $U_\sigma$。
+\end{enumerate}
+
+\section{数据记录与处理}
+\subsection{霍尔电压与工作电流的关系}
+对称测量法取 $V_H = \frac{1}{4}\left(V_1 - V_2 + V_3 - V_4\right)$，数据见表~\ref{tab:vh}。
+
+\begin{table}[htbp]
+  \centering
+  \caption{霍尔电压测量数据（$B = \qty{0.100}{\tesla}$）}
+  \label{tab:vh}
+  \begin{tabular}{cccccc}
+    \toprule
+    $I_S$/\unit{\milli\ampere} & $V_1$/\unit{\milli\volt} & $V_2$/\unit{\milli\volt}
+      & $V_3$/\unit{\milli\volt} & $V_4$/\unit{\milli\volt} & $V_H$/\unit{\milli\volt} \\
+    \midrule
+    1.00 & 0.45 & $-0.35$ & 0.35 & $-0.45$ & 0.40 \\
+    2.00 & 0.87 & $-0.67$ & 0.67 & $-0.87$ & 0.77 \\
+    3.00 & 1.33 & $-1.03$ & 1.03 & $-1.33$ & 1.18 \\
+    4.00 & 1.75 & $-1.35$ & 1.35 & $-1.75$ & 1.55 \\
+    5.00 & 2.21 & $-1.71$ & 1.71 & $-2.21$ & 1.96 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+对数据作线性拟合（图~\ref{fig:fit}），得斜率 $k = V_H / I_S = \qty{0.390(6)}{\ohm}$。
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width = 0.72\linewidth, height = 0.46\linewidth,
+      xlabel = {$I_S$/\unit{\milli\ampere}}, ylabel = {$V_H$/\unit{\milli\volt}},
+      xmin = 0, xmax = 5.5, ymin = 0, ymax = 2.3,
+      grid = major, legend pos = north west, legend cell align = left,
+    ]
+      \addplot[only marks, mark = *, color = blue] coordinates {
+        (1, 0.40) (2, 0.77) (3, 1.18) (4, 1.55) (5, 1.96)
+      };
+      \addlegendentry{测量值}
+      \addplot[domain = 0:5.5, samples = 2, color = red, thick] {0.390*x + 0.002};
+      \addlegendentry{拟合直线 $V_H = 0.390\,I_S + 0.002$}
+    \end{axis}
+  \end{tikzpicture}
+  \caption{$V_H$--$I_S$ 关系及线性拟合}
+  \label{fig:fit}
+\end{figure}
+
+\subsection{霍尔系数与载流子浓度}
+由式~\eqref{eq:hall} 得 $R_H = k d / B$，其中 $d = \qty{0.500(5)}{\milli\metre}$，
+$B = \qty{0.100(2)}{\tesla}$：
+\begin{equation*}
+  R_H = \frac{0.390 \times 0.500 \times 10^{-3}}{0.100}
+      = \qty{1.95e-3}{\cubic\metre\per\coulomb} .
+\end{equation*}
+相对不确定度
+\begin{equation*}
+  u_r(R_H) = \sqrt{\left(\frac{u_k}{k}\right)^2 + \left(\frac{u_d}{d}\right)^2 + \left(\frac{u_B}{B}\right)^2}
+           = \sqrt{\left(\frac{0.006}{0.390}\right)^2 + \left(\frac{0.005}{0.500}\right)^2 + \left(\frac{0.002}{0.100}\right)^2}
+           = 0.027 ,
+\end{equation*}
+故 $u(R_H) = u_r(R_H)\, R_H = \qty{0.05e-3}{\cubic\metre\per\coulomb}$。
+载流子浓度 $n = 1/(R_H e) = \qty[per-mode = power]{3.20e21}{\per\cubic\metre}$，$u_r(n) = u_r(R_H)$。
+
+\subsection{电导率与迁移率}
+取 $I_S = \qty{1.00}{\milli\ampere}$，测得 $U_\sigma = \qty{6.00(5)}{\milli\volt}$，
+$L = \qty{3.00(5)}{\milli\metre}$，$a = \qty{4.00(5)}{\milli\metre}$，由式~\eqref{eq:sigma}
+\begin{equation*}
+  \sigma = \frac{1.00 \times 10^{-3} \times 3.00 \times 10^{-3}}{6.00 \times 10^{-3} \times 4.00 \times 10^{-3} \times 0.500 \times 10^{-3}}
+         = \qty{250}{\siemens\per\metre} ,
+\end{equation*}
+\begin{gather*}
+  u_r(\sigma) = \sqrt{\left(\frac{u_L}{L}\right)^2 + \left(\frac{u_a}{a}\right)^2 + \left(\frac{u_d}{d}\right)^2 + \left(\frac{u_U}{U_\sigma}\right)^2} = 0.025 , \\
+  \mu = R_H \sigma = \qty{0.488}{\metre\squared\per\volt\per\second} , \qquad
+  u_r(\mu) = \sqrt{u_r^2(R_H) + u_r^2(\sigma)} = 0.037 .
+\end{gather*}
+
+\section{实验结果与讨论}
+最后结果表达为：
+\begin{align*}
+  R_H &= \qty{1.95(5)e-3}{\cubic\metre\per\coulomb}, &
+  n &= \qty[per-mode = power]{3.20(9)e21}{\per\cubic\metre}, \\
+  \sigma &= \qty{250(6)}{\siemens\per\metre}, &
+  \mu &= \qty{0.49(2)}{\metre\squared\per\volt\per\second}.
+\end{align*}
+$R_H > 0$，样品为 P 型半导体。$V_H$ 与 $I_S$ 线性良好，说明对称测量法有效消除了
+不等位电压等副效应；剩余误差主要来自样品厚度与磁感应强度的测量。
+
+\end{document}

@@ -1,0 +1,57 @@
+% >>> typage-template article@2026.10.1 variant=a4
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[margin=2.5cm]{geometry}
+\bibliographystyle{plain}
+% <<< typage-template
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\title{Article Title}
+\author{First Author\thanks{Department, University, \texttt{first.author@example.com}}
+  \and Second Author\thanks{Laboratory, Institute, \texttt{second.author@example.com}}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+State the problem, the approach and the main result in a few sentences.
+\end{abstract}
+
+\section{Introduction}
+Introduce the problem and why it matters, then list the contributions.
+Typesetting follows the usual \LaTeX{} conventions~\cite{lamport1994latex}.
+
+\section{Method}
+Describe the method. Number the equations you refer to:
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) + \lambda \lVert \theta \rVert_2^2 .
+\end{equation}
+Equation~\eqref{eq:objective} is the training objective.
+
+\section{Results}
+Table~\ref{tab:results} summarizes the results.
+
+\begin{table}[t]
+  \centering
+  \caption{Results on the example benchmark.}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \toprule
+    Method   & Accuracy (\%) & Time (s) \\
+    \midrule
+    Baseline & 81.2          & 12.4     \\
+    Ours     & 84.7          & 10.9     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Conclusion}
+Conclude and outline future work.
+
+\bibliography{refs}
+\end{document}

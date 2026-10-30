@@ -1,0 +1,44 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "beamer",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Academic Slides (beamer)",
+  "nameZh": "学术报告幻灯片（beamer）",
+  "category": "slides-cv",
+  "tags": [
+    "beamer",
+    "slides",
+    "16:9"
+  ],
+  "description": "A talk with title page, outline, itemized frames, a block, an equation and a results table; widescreen or 4:3.",
+  "descriptionZh": "学术报告幻灯片：标题页、目录、要点页、提示框、公式与结果表；宽屏或 4:3。",
+  "license": {
+    "spdx": "CC0-1.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "7d24h",
+    "url": null,
+    "version": null,
+    "retrievedAt": null
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "f00bec8bc69f8612417818fb22c662db75dafc2464c679b5cd231ac8aeb6dab0",
+      "bytes": 716
+    },
+    {
+      "path": "main.tex",
+      "sha256": "763c8751d2ac2667c194f84cccddd22d3d6706b0cdb9b9056f7c9b2ad9d6cfa8",
+      "bytes": 1316
+    },
+    {
+      "path": "typage.json",
+      "sha256": "1bf2eeab7c698cddff8588465f42569f625463e7672b6cfffea19128f1a5b45c",
+      "bytes": 1392
+    }
+  ]
+}

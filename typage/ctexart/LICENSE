@@ -1,0 +1,21 @@
+Chinese Article (typage/ctexart) - license
+
+All files in this template were written by 7D24H and are dedicated to the
+public domain under CC0 1.0 Universal (SPDX: CC0-1.0). You may copy, modify
+and use them, also for papers and commercial work, without asking and
+without attribution.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE    CC0-1.0
+
+Full text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+(also LICENSES/CC0-1.0.txt in https://github.com/fellowAI2025/7d24h-templates)
+
+The document class and the packages the sample loads
+(ctexart, geometry, gbt7714, amsmath, booktabs, hyperref, ...)
+are not part of this template.
+They come from the TeX distribution (the built-in Tectonic bundle) under
+their own licenses.
+
+The Fandol fonts that ctex uses with fontset=fandol come from the TeX
+distribution (CTAN lists them under the GPL); they are not part of this
+template and are not shipped with it.

@@ -1,0 +1,97 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "thesis",
+  "venue": null,
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [],
+  "templateRegion": {
+    "documentClass": "book",
+    "ownedPackages": [
+      "fontspec",
+      "geometry",
+      "setspace"
+    ],
+    "ownedCommands": [
+      "\\onehalfspacing",
+      "\\doublespacing",
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "oneside",
+      "label": "A4, one-sided (screen)",
+      "labelZh": "A4 · 单面（屏幕阅读）",
+      "classOptions": [
+        "12pt",
+        "a4paper",
+        "oneside"
+      ]
+    },
+    {
+      "id": "twoside",
+      "label": "A4, two-sided (print)",
+      "labelZh": "A4 · 双面（打印）",
+      "classOptions": [
+        "12pt",
+        "a4paper",
+        "twoside",
+        "openright"
+      ]
+    },
+    {
+      "id": "letter",
+      "label": "US Letter, one-sided",
+      "labelZh": "US Letter · 单面",
+      "classOptions": [
+        "12pt",
+        "letterpaper",
+        "oneside"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "date",
+      "abstract"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "plain",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Latin Modern Roman",
+    "baseSizePt": 12,
+    "lineSpread": 1.5,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": null,
+    "pages": 12,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T10:49:20Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

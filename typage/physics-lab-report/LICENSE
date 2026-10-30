@@ -1,0 +1,16 @@
+Physics Lab Report (typage/physics-lab-report) - license
+
+All files in this template were written by 7D24H and are dedicated to the
+public domain under CC0 1.0 Universal (SPDX: CC0-1.0). You may copy, modify
+and use them, also for reports and commercial work, without asking and
+without attribution.
+
+  main.tex, physlab.cls, manifest.json, typage.json, LICENSE    CC0-1.0
+
+Full text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+(also LICENSES/CC0-1.0.txt in https://github.com/fellowAI2025/7d24h-templates)
+
+The class builds on ctexart. ctex, siunitx, pgfplots and the other packages
+the sample loads, and the Fandol fonts, are not part of this template; they
+come from the TeX distribution (the built-in Tectonic bundle) under their
+own licenses. The school name in the sample is an example field value.

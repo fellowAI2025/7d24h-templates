@@ -1,0 +1,28 @@
+{
+  "schema": "7d24h-template-categories/v1",
+  "spage": [
+    { "id": "notes", "label": "Notes", "labelZh": "笔记" },
+    { "id": "meeting", "label": "Meeting minutes", "labelZh": "会议纪要" },
+    { "id": "plan", "label": "Reports and plans", "labelZh": "周报与计划" },
+    { "id": "proposal", "label": "Proposals and specs", "labelZh": "方案与说明" }
+  ],
+  "typage": [
+    { "id": "conference", "label": "Conference", "labelZh": "会议" },
+    { "id": "journal", "label": "Journal", "labelZh": "期刊" },
+    { "id": "thesis", "label": "Thesis · University", "labelZh": "学位论文 · 大学" },
+    { "id": "general", "label": "General writing", "labelZh": "通用写作" },
+    { "id": "slides-cv", "label": "Slides and CV", "labelZh": "演示与简历" }
+  ],
+  "mpage": [
+    { "id": "general", "label": "General long document", "labelZh": "通用长文档" },
+    { "id": "bid", "label": "Bid", "labelZh": "投标书" },
+    { "id": "company", "label": "Company master", "labelZh": "公司母版" },
+    { "id": "tender", "label": "Tender", "labelZh": "招标书" },
+    { "id": "legal", "label": "Legal document", "labelZh": "法律文书" },
+    { "id": "report", "label": "Professional report", "labelZh": "专业报告" },
+    { "id": "book", "label": "Book", "labelZh": "书籍" },
+    { "id": "paper", "label": "Paper", "labelZh": "论文" },
+    { "id": "manual", "label": "Manual", "labelZh": "手册" },
+    { "id": "custom", "label": "Custom", "labelZh": "自定义" }
+  ]
+}

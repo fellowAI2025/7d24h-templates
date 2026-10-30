@@ -1,0 +1,49 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "ctexart",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Chinese Article (ctexart)",
+  "nameZh": "中文论文（ctexart）",
+  "category": "general",
+  "tags": [
+    "中文",
+    "ctex",
+    "GB/T 7714"
+  ],
+  "description": "A Chinese article with ctexart and the Fandol fonts from the built-in bundle (same result on macOS, Windows and Linux), GB/T 7714 numeric references.",
+  "descriptionZh": "ctexart 中文论文，使用内置 bundle 的 Fandol 字体（三个平台结果一致），参考文献为 GB/T 7714 顺序编码制。",
+  "license": {
+    "spdx": "CC0-1.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "7d24h",
+    "url": null,
+    "version": null,
+    "retrievedAt": null
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "c8bfb56d7f3a899677ae87f5df5a233c6393605e34f2ab96f92e29d3ce48c238",
+      "bytes": 928
+    },
+    {
+      "path": "main.tex",
+      "sha256": "c59ad6193db55ea8bbd5a98137a5893f4628eee4c1180e36338921f44d16d275",
+      "bytes": 1589
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "4357fb747b86658638c29f5e3611817e6c3afc1914f0a9f66156b32910f71193",
+      "bytes": 409
+    },
+    {
+      "path": "typage.json",
+      "sha256": "9fdb830dd5904e6d1b73cb89136674d1c266d1192297617f2f5a8eaabb2f1dc4",
+      "bytes": 1668
+    }
+  ]
+}

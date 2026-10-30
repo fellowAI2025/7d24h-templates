@@ -1,0 +1,78 @@
+% >>> typage-template ieee-journal@2026.10.1 variant=journal
+\documentclass[journal]{IEEEtran}
+% IEEEtran selects Times (ptm); under XeTeX that needs the T1 encoding.
+\usepackage[T1]{fontenc}
+\bibliographystyle{IEEEtran}
+% <<< typage-template
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\begin{document}
+
+\title{Paper Title}
+
+\author{First~Author,~\IEEEmembership{Member,~IEEE,}
+  and~Second~Author%
+\thanks{First Author is with the Department, University, City, Country (e-mail: first.author@example.com).}%
+\thanks{Second Author is with the Laboratory, Institute, City, Country (e-mail: second.author@example.com).}}
+
+\markboth{Journal Name,~Vol.~X, No.~Y, Month~Year}%
+{Author \MakeLowercase{\textit{et al.}}: Paper Title}
+
+\maketitle
+
+\begin{abstract}
+State the problem, the approach and the main result in one paragraph.
+\end{abstract}
+
+\begin{IEEEkeywords}
+first keyword, second keyword, third keyword
+\end{IEEEkeywords}
+
+\section{Introduction}
+\IEEEPARstart{T}{his} paragraph introduces the problem and the contributions.
+Cite prior work by number~\cite{lamport1994latex,knuth1984texbook}.
+
+\section{Method}
+Describe the method. Number the equations you refer to:
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) .
+\end{equation}
+
+\section{Experiments}
+Table~\ref{tab:results} summarizes the results of~\eqref{eq:objective}.
+
+\begin{table}[!htb]
+  \caption{Results on the Example Benchmark}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Method   & Accuracy (\%) & Time (s) \\
+    \midrule
+    Baseline & 81.2          & 12.4     \\
+    Ours     & 84.7          & 10.9     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Conclusion}
+Conclude and outline future work.
+
+\section*{Acknowledgment}
+Acknowledge funding and help here.
+
+\bibliography{refs}
+
+\begin{IEEEbiographynophoto}{First Author}
+Biography of the first author.
+\end{IEEEbiographynophoto}
+
+\begin{IEEEbiographynophoto}{Second Author}
+Biography of the second author.
+\end{IEEEbiographynophoto}
+
+\end{document}

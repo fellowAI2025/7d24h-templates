@@ -1,0 +1,77 @@
+% >>> typage-template ieee-conference@2026.10.1 variant=letter
+\documentclass[conference]{IEEEtran}
+% IEEEtran selects Times (ptm); under XeTeX that needs the T1 encoding.
+\usepackage[T1]{fontenc}
+\bibliographystyle{IEEEtran}
+% <<< typage-template
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+\begin{document}
+
+\title{Paper Title}
+
+\author{\IEEEauthorblockN{First Author}
+\IEEEauthorblockA{\textit{Department} \\
+\textit{University}\\
+City, Country \\
+first.author@example.com}
+\and
+\IEEEauthorblockN{Second Author}
+\IEEEauthorblockA{\textit{Laboratory} \\
+\textit{Institute}\\
+City, Country \\
+second.author@example.com}}
+
+\maketitle
+
+\begin{abstract}
+State the problem, the approach and the main result. Do not use citations or
+symbols in the abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+first keyword, second keyword, third keyword
+\end{IEEEkeywords}
+
+\section{Introduction}
+Introduce the problem and list the contributions. Cite prior work by
+number~\cite{lamport1994latex,knuth1984texbook}.
+
+\section{Method}
+Describe the method. Number the equations you refer to:
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) .
+\end{equation}
+
+\section{Experiments}
+Table~\ref{tab:results} summarizes the results of~\eqref{eq:objective}.
+
+\begin{table}[htbp]
+  \caption{Results on the Example Benchmark}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Method   & Accuracy (\%) & Time (s) \\
+    \midrule
+    Baseline & 81.2          & 12.4     \\
+    Ours     & 84.7          & 10.9     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Conclusion}
+Conclude and outline future work.
+
+\section*{Acknowledgment}
+Acknowledge funding and help here.
+
+\bibliography{refs}
+
+\end{document}

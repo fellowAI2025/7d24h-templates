@@ -1,0 +1,51 @@
+% >>> typage-template cv@2026.10.1 variant=a4
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[margin=2cm]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.2em,itemsep=2pt}
+\setlength{\parindent}{0pt}
+% <<< typage-template
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+
+\begin{document}
+
+{\LARGE\bfseries First Last}\par
+\medskip
+Department, University, City, Country \quad
+\href{mailto:first.last@example.com}{first.last@example.com} \quad
+\url{https://example.com}
+
+\section*{Research Interests}
+Two or three areas, one line each.
+
+\section*{Education}
+\textbf{Ph.D. in Field}, University \hfill 2020--2025\\
+Thesis: \emph{Thesis Title}. Advisor: Advisor Name.
+
+\textbf{B.Sc. in Field}, University \hfill 2016--2020
+
+\section*{Positions}
+\textbf{Postdoctoral Researcher}, Institute \hfill 2025--present
+
+\section*{Publications}
+\begin{itemize}
+  \item \textbf{F. Last}, A. Coauthor. Paper title. In \emph{Proceedings of the Conference}, 2025.
+  \item A. Coauthor, \textbf{F. Last}. Paper title. \emph{Journal Name}, 12(3):45--67, 2024.
+\end{itemize}
+
+\section*{Teaching}
+\begin{itemize}
+  \item Teaching assistant, Course Name, University, 2022--2023.
+\end{itemize}
+
+\section*{Awards}
+\begin{itemize}
+  \item Award name, Organization, 2024.
+\end{itemize}
+
+\section*{Service}
+Reviewer for Conference (2024, 2025) and Journal Name.
+
+\end{document}

@@ -1,0 +1,85 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "general",
+  "venue": null,
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [],
+  "templateRegion": {
+    "documentClass": "ctexart",
+    "ownedPackages": [
+      "geometry",
+      "gbt7714"
+    ],
+    "ownedCommands": [
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "xiaosi",
+      "label": "A4, size Xiao Si (12 pt)",
+      "labelZh": "A4 · 小四",
+      "classOptions": [
+        "UTF8",
+        "fontset=fandol",
+        "zihao=-4",
+        "a4paper"
+      ]
+    },
+    {
+      "id": "wuhao",
+      "label": "A4, size Wu Hao (10.5 pt)",
+      "labelZh": "A4 · 五号",
+      "classOptions": [
+        "UTF8",
+        "fontset=fandol",
+        "zihao=5",
+        "a4paper"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "thanks",
+      "date",
+      "abstract"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "gbt7714-numerical",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "FandolSong",
+    "baseSizePt": 12,
+    "lineSpread": 1.3,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": null,
+    "pages": 2,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T10:49:07Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

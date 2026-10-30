@@ -1,0 +1,116 @@
+name: release
+
+on:
+  push:
+    branches: [main]
+    paths: ['typage/**', 'spage/**', 'mpage/**', 'categories.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+env:
+  TECTONIC_URL: https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-unknown-linux-musl.tar.gz
+  TECTONIC_SHA256: 8533d07f9ccbd7a65824b9e0459041bca34af1eb33daba48f59215593753a3b7
+  BIBER_URL: https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/2.17/binaries/Linux/biber-linux_x86_64.tar.gz/download
+  BIBER_SHA256: 129d2e0332a57e985ffa253e5e9fbd28ef99af5a068d1b141145211969aa8999
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: The catalog is only published signed
+        env:
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+        run: |
+          if [ -z "$CATALOG_SIGNING_KEY" ]; then echo "::error::CATALOG_SIGNING_KEY secret is not set (tools/keygen.mjs)"; exit 1; fi
+          test -f catalog/catalog-signing.pub.pem || { echo "::error::catalog/catalog-signing.pub.pem missing"; exit 1; }
+      - name: Validate
+        run: node tools/schemas.mjs --check && node tools/validate.mjs
+
+      - name: Pack new versions and license updates
+        id: pack
+        run: |
+          node tools/package.mjs --changed-only --out dist
+          if ls dist/*.zip >/dev/null 2>&1; then echo "any=true" >> "$GITHUB_OUTPUT"; else echo "any=false" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Install Tectonic 0.17.0, biber 2.17 and preview tools
+        if: steps.pack.outputs.any == 'true'
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/tectonic.tar.gz" "$TECTONIC_URL"
+          echo "$TECTONIC_SHA256  $RUNNER_TEMP/tectonic.tar.gz" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/bin" && tar -xzf "$RUNNER_TEMP/tectonic.tar.gz" -C "$RUNNER_TEMP/bin"
+          if grep -qs '"biber": "2.17"' typage/*/typage.json; then
+            curl -fsSL -o "$RUNNER_TEMP/biber.tar.gz" "$BIBER_URL"
+            echo "$BIBER_SHA256  $RUNNER_TEMP/biber.tar.gz" | sha256sum -c -
+            tar -xzf "$RUNNER_TEMP/biber.tar.gz" -C "$RUNNER_TEMP/bin"
+          fi
+          echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils webp
+      - name: Tectonic bundle cache
+        if: steps.pack.outputs.any == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/tectonic-cache
+          key: tectonic-0.17.0-v33-${{ hashFiles('typage/**') }}
+          restore-keys: tectonic-0.17.0-v33-
+
+      - name: Compile released Typage templates and render previews
+        if: steps.pack.outputs.any == 'true'
+        run: |
+          mkdir -p dist/pdf
+          for zip in dist/typage-*.zip; do
+            name=$(basename "$zip" .zip)      # typage-<id>@<version>
+            id=${name#typage-}; id=${id%@*}
+            node tools/compile.mjs --tectonic tectonic --cache "$RUNNER_TEMP/tectonic-cache" --pdf-out dist/pdf "typage/$id"
+            pdftoppm -r 110 -f 1 -l 3 -png "dist/pdf/$name.pdf" "dist/pdf/$name"
+            for png in dist/pdf/"$name"-*.png; do
+              page=${png##*-}; page=$((10#${page%.png}))
+              cwebp -quiet -q 82 "$png" -o "dist/$name.page-$page.webp"
+            done
+            first=$(ls dist/pdf/"$name"-*.png | head -1)
+            cwebp -quiet -q 80 -resize 360 0 "$first" -o "dist/$name.thumb.webp"
+          done
+
+      - name: Catalog
+        id: catalog
+        if: steps.pack.outputs.any == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+        run: |
+          tag="templates-$(date -u +%Y.%m.%d)"
+          n=1; base="$tag"
+          while gh release view "$tag" >/dev/null 2>&1; do n=$((n + 1)); tag="$base.$n"; done
+          node tools/catalog.mjs --release-tag "$tag" --dist dist
+          node tools/sign.mjs
+          node tools/sign.mjs --verify
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Publish the release
+        if: steps.pack.outputs.any == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="${{ steps.catalog.outputs.tag }}"
+          gh release create "$tag" --title "$tag" --notes "System templates released by $GITHUB_SHA." \
+            dist/*.zip dist/*.webp catalog/catalog.v1.json catalog/catalog.v1.json.sig
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/catalog.v1.json catalog/catalog.v1.json.sig
+          git commit -m "catalog: $tag [skip ci]"
+          git push
+
+      # Mirror for users in China: the same files under
+      # https://www.7d24h.work/downloads/templates/<tag>/ (files only, no pages).
+      # The upload method (credentials, target) is decided with the owner;
+      # until then the desktop app falls back to GitHub only.

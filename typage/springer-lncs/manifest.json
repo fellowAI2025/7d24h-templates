@@ -1,0 +1,59 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "springer-lncs",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Springer LNCS Proceedings Paper",
+  "nameZh": "Springer LNCS 会议论文",
+  "category": "conference",
+  "tags": [
+    "Springer",
+    "LNCS",
+    "llncs"
+  ],
+  "description": "Springer Lecture Notes in Computer Science paper with the official llncs.cls 2.26 and splncs04.bst, shipped unmodified.",
+  "descriptionZh": "Springer LNCS 会议论文，随模板附带官方 llncs.cls 2.26 与 splncs04.bst，未改动。",
+  "license": {
+    "spdx": "CC0-1.0 AND CC-BY-4.0 AND LPPL-1.3c",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "official",
+    "url": "https://ctan.org/pkg/llncs",
+    "version": "llncs 2.26 (2025-02-25)",
+    "retrievedAt": "2026-10-30"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "8657038cc9021c70bfdcde9fac965f15d772344cef546ebeb53d46d2a73db2fd",
+      "bytes": 1540
+    },
+    {
+      "path": "llncs.cls",
+      "sha256": "e9894c92191fcd195eef3120a36d2f75b52030eadcbdc3ce1463179746526e6a",
+      "bytes": 43405
+    },
+    {
+      "path": "main.tex",
+      "sha256": "a2c23c2dd795c6e22bcc99ebddfe92847da50f0569da9d1ab5111ca0d380123e",
+      "bytes": 1984
+    },
+    {
+      "path": "refs.bib",
+      "sha256": "ebae41bec31f8401fe5ca209d4f4d0f8d78cc4373bd170cd40f5c127b142ccad",
+      "bytes": 392
+    },
+    {
+      "path": "splncs04.bst",
+      "sha256": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174",
+      "bytes": 32146
+    },
+    {
+      "path": "typage.json",
+      "sha256": "3d60c7738295c962f06981fba4577c18e31d9db93b5604c622bca2519e3f9d61",
+      "bytes": 2655
+    }
+  ]
+}

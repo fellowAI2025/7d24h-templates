@@ -1,0 +1,33 @@
+Springer LNCS Proceedings Paper (typage/springer-lncs) - license
+
+This template contains files under three licenses.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE
+      Written by 7D24H. CC0-1.0: dedicated to the public domain; papers
+      written from this template need no attribution.
+      https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+  llncs.cls
+      llncs document class, version 2.26 (2025-02-25).
+      Copyright (c) 1996-2025 Springer.
+      Licensed under CC BY 4.0 (or later), as stated in the README of the
+      llncs package. Unmodified copy obtained from CTAN:
+      https://ctan.org/pkg/llncs
+      https://creativecommons.org/licenses/by/4.0/legalcode
+
+  splncs04.bst
+      BibTeX style for Springer LNCS, distributed with llncs 2.26.
+      Generated with makebst (Copyright 1994-2007 Patrick W Daly) and
+      edited by Maurizio Patrignani, as stated in the file header.
+      Licensed under the LaTeX Project Public License, version 1 or any
+      later version (here: LPPL 1.3c), as stated in the file header.
+      Unmodified copy obtained from CTAN: https://ctan.org/pkg/llncs
+      https://www.latex-project.org/lppl/lppl-1-3c.txt
+
+Both third-party files are redistributed unmodified, as a convenience so
+that the template compiles offline; their own notices are kept in the
+files. The complete llncs package, with its documentation and samples, is
+available from Springer and from CTAN.
+
+The full license texts are also in LICENSES/ of
+https://github.com/fellowAI2025/7d24h-templates.

@@ -1,0 +1,51 @@
+{
+  "schema": "7d24h-template/v1",
+  "id": "physics-lab-report",
+  "version": "2026.10.1",
+  "docFormat": "typage",
+  "minAppVersion": "0.0.99",
+  "name": "Physics Lab Report (Chinese)",
+  "nameZh": "物理实验报告",
+  "category": "general",
+  "tags": [
+    "物理实验",
+    "实验报告",
+    "中文",
+    "siunitx",
+    "pgfplots"
+  ],
+  "description": "Chinese physics lab report laid out like the university paper form: school name and report title, student and lab fields, a framed body with experiment name and number. The sample (Hall effect) shows a data table, uncertainty propagation with siunitx and a pgfplots linear fit.",
+  "descriptionZh": "按高校纸质物理实验报告版式排版：校名与“物理实验报告”标题、学生与实验信息栏、加框正文（实验名称、实验编号）。示例（霍尔效应）含数据表、用 siunitx 写的不确定度计算和 pgfplots 线性拟合图。",
+  "license": {
+    "spdx": "CC0-1.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "kind": "7d24h",
+    "url": null,
+    "version": null,
+    "retrievedAt": null
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "db088e87fd094ab8e939c5cb15bae600d4538d514c65dc9f88ea24c744d64664",
+      "bytes": 822
+    },
+    {
+      "path": "main.tex",
+      "sha256": "28d6fad8408720699dcc2259a9b5f428c2af4e5b01e2512e9429ec467557f3c0",
+      "bytes": 5863
+    },
+    {
+      "path": "physlab.cls",
+      "sha256": "629e325ae802333cd30e7a81d4363df8736b2df3c0546000701ff0f9c28403b6",
+      "bytes": 5340
+    },
+    {
+      "path": "typage.json",
+      "sha256": "99762e5a875341a35155343cddd4749eba106886dc2f0b7493a15a3edc892c30",
+      "bytes": 2165
+    }
+  ]
+}

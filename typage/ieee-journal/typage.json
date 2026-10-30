@@ -1,0 +1,110 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "official",
+  "venue": {
+    "profileId": null,
+    "label": "IEEE journal",
+    "labelZh": "IEEE 期刊"
+  },
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [
+    {
+      "path": "IEEEtran.cls",
+      "inBundle": true,
+      "sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
+      "officialUrl": "https://mirrors.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran.cls",
+      "officialVersion": "1.8b (2015/08/26)"
+    },
+    {
+      "path": "IEEEtran.bst",
+      "inBundle": true,
+      "sha256": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f",
+      "officialUrl": "https://mirrors.ctan.org/macros/latex/contrib/IEEEtran/bibtex/IEEEtran.bst",
+      "officialVersion": "1.14 (2015/08/26)"
+    }
+  ],
+  "templateRegion": {
+    "documentClass": "IEEEtran",
+    "ownedPackages": [
+      "fontenc"
+    ],
+    "ownedCommands": [
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "journal",
+      "label": "Journal, two columns",
+      "labelZh": "期刊 · 双栏",
+      "classOptions": [
+        "journal"
+      ]
+    },
+    {
+      "id": "draft",
+      "label": "Draft, one column",
+      "labelZh": "草稿 · 单栏",
+      "classOptions": [
+        "journal",
+        "onecolumn",
+        "draftclsnofoot"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "ieeetran",
+    "fields": [
+      "title",
+      "authors",
+      "affiliations",
+      "emails",
+      "thanks",
+      "abstract",
+      "keywords"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "IEEEtran",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\IEEEmembership",
+      "to": null
+    },
+    {
+      "command": "\\IEEEPARstart",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Times",
+    "baseSizePt": 10,
+    "lineSpread": 1,
+    "paper": "letter"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": true,
+    "pages": 1,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T10:49:49Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+IEEE Conference Paper (IEEEtran) (typage/ieee-conference) - license
+
+The files in this template were written by 7D24H and are dedicated to the
+public domain under CC0 1.0 Universal (SPDX: CC0-1.0). You may copy, modify
+and use them, also for papers and commercial work, without asking and
+without attribution.
+
+  main.tex, refs.bib, manifest.json, typage.json, LICENSE    CC0-1.0
+
+Full text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+(also LICENSES/CC0-1.0.txt in https://github.com/fellowAI2025/7d24h-templates)
+
+Not included in this template: the official IEEEtran.cls 1.8b and
+IEEEtran.bst 1.14 (Copyright Michael Shell, LaTeX Project Public License
+1.3) are taken unmodified from the built-in Tectonic bundle, which carries
+the same files as CTAN (https://ctan.org/pkg/ieeetran). The other packages
+the sample loads also come from the bundle under their own licenses.

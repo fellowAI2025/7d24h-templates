@@ -1,0 +1,81 @@
+% >>> typage-template thesis-en@2026.10.1 variant=oneside
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage{fontspec}
+\usepackage[inner=3cm,outer=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\bibliographystyle{plain}
+% <<< typage-template
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\title{Thesis Title\\[1ex]\large A thesis submitted for the degree of Doctor of Philosophy}
+\author{Author Name\\[1ex]\normalsize Department, University}
+\date{Month Year}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+Summarize the research question, the approach, the main findings and their significance.
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+Thank the people and organizations that supported this work.
+
+\tableofcontents
+\listoftables
+
+\mainmatter
+\chapter{Introduction}
+State the research question and the contributions of this thesis.
+Earlier work on document preparation is described in~\cite{lamport1994latex,knuth1984texbook}.
+
+\section{Outline}
+Chapter~\ref{ch:background} reviews related work, Chapter~\ref{ch:method} describes the method
+and Chapter~\ref{ch:results} presents the results.
+
+\chapter{Background}
+\label{ch:background}
+Review the literature the thesis builds on.
+
+\chapter{Method}
+\label{ch:method}
+Describe the method. Number the equations you refer to:
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) + \lambda \lVert \theta \rVert_2^2 .
+\end{equation}
+
+\chapter{Results}
+\label{ch:results}
+Table~\ref{tab:results} summarizes the results of the method in Equation~\eqref{eq:objective}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Results on the example benchmark.}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \toprule
+    Method   & Accuracy (\%) & Time (s) \\
+    \midrule
+    Baseline & 81.2          & 12.4     \\
+    Ours     & 84.7          & 10.9     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\chapter{Conclusion}
+Conclude the thesis and outline future work.
+
+\appendix
+\chapter{Additional Material}
+Supplementary derivations or data.
+
+\backmatter
+\bibliography{refs}
+\end{document}

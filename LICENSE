@@ -1,24 +1,47 @@
-BSD 2-Clause License
+7d24h-templates - licensing overview
 
-Copyright (c) 2026, 7D24H group
+This repository is not under one single license. Every template directory
+carries its own license file, and that file is what applies to the files
+of that template. The full texts of the licenses used below are in
+LICENSES/.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+  Path                               License
+  ---------------------------------  ---------------------------------------
+  typage/<id>/, spage/<id>/,         The template's own license file
+  mpage/<id>/                        (LICENSE in the template directory,
+                                     named by "license.file" in its
+                                     manifest.json). It lists every file of
+                                     the template with its license.
 
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
+  tools/, schemas/, .github/         BSD-2-Clause
+                                     (LICENSES/BSD-2-Clause.txt)
 
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
+  Everything else written by 7D24H   CC0-1.0
+  (README.md, AUTHORING.md,          (LICENSES/CC0-1.0.txt)
+  categories.json, catalog/, this
+  file)
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Templates written by 7D24H (their samples, bibliographies, manifest.json and
+typage.json) are released under CC0-1.0, so papers and documents written
+from them carry no obligation towards 7D24H.
+
+Third-party files inside a template - for example a conference's or
+publisher's official document class or bibliography style - keep their
+original license and copyright notices and are redistributed unmodified.
+7D24H does not relicense them. Their licenses are named in the template's
+own license file. Placing templates under different licenses side by side
+in this repository, or in one download, does not put any file under
+another file's license.
+
+Licenses that are fine for system templates without further review:
+CC0-1.0, CC-BY-4.0, MIT, BSD-2-Clause, BSD-3-Clause, Apache-2.0, LPPL-1.2,
+LPPL-1.3a, LPPL-1.3c, OFL-1.1. Copyleft (GPL, LGPL, AGPL, CC BY-SA),
+non-commercial (CC BY-NC), no-derivatives (CC BY-ND) and files without a
+license are flagged by tools/validate.mjs for review before release; such
+venues are offered as "official, obtain it yourself" instead.
+
+Template license files are maintained by the template operators and may be
+completed at any time; a license-only change is re-published under the
+same template version.
+
+Copyright (c) 2026, 7D24H group, for the parts written by 7D24H.

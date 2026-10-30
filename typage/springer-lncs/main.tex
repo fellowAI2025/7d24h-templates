@@ -1,0 +1,81 @@
+% >>> typage-template springer-lncs@2026.10.1 variant=runningheads
+\documentclass[runningheads]{llncs}
+\bibliographystyle{splncs04}
+% <<< typage-template
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\begin{document}
+
+\title{Contribution Title\thanks{Supported by Funding Organization.}}
+
+\author{First Author\inst{1} \and Second Author\inst{2}}
+
+\authorrunning{F. Author and S. Author}
+
+\institute{Department, University, City, Country\\
+\email{first.author@example.com}
+\and
+Laboratory, Institute, City, Country\\
+\email{second.author@example.com}}
+
+\maketitle
+
+\begin{abstract}
+The abstract should briefly summarize the contents of the paper in
+150--250 words.
+
+\keywords{First keyword \and Second keyword \and Third keyword.}
+\end{abstract}
+
+\section{Introduction}
+Introduce the problem and list the contributions. Cite prior work by
+number~\cite{lamport1994latex,knuth1984texbook}.
+
+\section{Method}
+Describe the method. Number the equations you refer to:
+\begin{equation}
+  \label{eq:objective}
+  \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) .
+\end{equation}
+
+\begin{theorem}
+State a result in the theorem environment provided by the class.
+\end{theorem}
+
+\begin{proof}
+Prove it.
+\end{proof}
+
+\section{Experiments}
+Table~\ref{tab:results} summarizes the results of Eq.~\eqref{eq:objective}.
+
+\begin{table}
+  \caption{Results on the example benchmark.}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Method   & Accuracy (\%) & Time (s) \\
+    \midrule
+    Baseline & 81.2          & 12.4     \\
+    Ours     & 84.7          & 10.9     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Conclusion}
+Conclude and outline future work.
+
+\begin{credits}
+\subsubsection{\ackname} Acknowledge funding and help here.
+
+\subsubsection{\discintname}
+The authors have no competing interests to declare that are relevant to the
+content of this article.
+\end{credits}
+
+\bibliography{refs}
+
+\end{document}

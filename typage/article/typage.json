@@ -1,0 +1,91 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "general",
+  "venue": null,
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [],
+  "templateRegion": {
+    "documentClass": "article",
+    "ownedPackages": [
+      "fontspec",
+      "geometry"
+    ],
+    "ownedCommands": [
+      "\\bibliographystyle"
+    ]
+  },
+  "variants": [
+    {
+      "id": "a4",
+      "label": "A4, 11 pt",
+      "labelZh": "A4 · 11 磅",
+      "classOptions": [
+        "11pt",
+        "a4paper"
+      ]
+    },
+    {
+      "id": "letter",
+      "label": "US Letter, 11 pt",
+      "labelZh": "US Letter · 11 磅",
+      "classOptions": [
+        "11pt",
+        "letterpaper"
+      ]
+    },
+    {
+      "id": "twocolumn",
+      "label": "Two columns, A4, 10 pt",
+      "labelZh": "双栏 · A4 · 10 磅",
+      "classOptions": [
+        "10pt",
+        "a4paper",
+        "twocolumn"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "thanks",
+      "date",
+      "abstract"
+    ]
+  },
+  "bibliography": {
+    "system": "bibtex",
+    "style": "plain",
+    "citation": "numeric",
+    "citeCommands": {}
+  },
+  "classCommands": [],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "Latin Modern Roman",
+    "baseSizePt": 11,
+    "lineSpread": 1,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "refs.bib": "bib"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": null,
+    "pages": 2,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T10:48:55Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

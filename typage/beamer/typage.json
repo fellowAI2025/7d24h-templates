@@ -1,0 +1,72 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "general",
+  "venue": null,
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [],
+  "templateRegion": {
+    "documentClass": "beamer",
+    "ownedPackages": [
+      "fontspec"
+    ],
+    "ownedCommands": [
+      "\\usetheme",
+      "\\usecolortheme",
+      "\\usefonttheme"
+    ]
+  },
+  "variants": [
+    {
+      "id": "wide",
+      "label": "Widescreen 16:9",
+      "labelZh": "宽屏 16:9",
+      "classOptions": [
+        "aspectratio=169"
+      ]
+    },
+    {
+      "id": "standard",
+      "label": "Standard 4:3",
+      "labelZh": "标准 4:3",
+      "classOptions": []
+    }
+  ],
+  "frontMatter": {
+    "serializer": "beamer",
+    "fields": [
+      "title",
+      "subtitle",
+      "authors",
+      "affiliations",
+      "date"
+    ]
+  },
+  "bibliography": {
+    "system": "none",
+    "style": null,
+    "citation": "none",
+    "citeCommands": {}
+  },
+  "classCommands": [],
+  "requirements": null,
+  "visualTheme": null,
+  "roles": {
+    "main.tex": "sample"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": null,
+    "pages": 6,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T10:49:01Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}

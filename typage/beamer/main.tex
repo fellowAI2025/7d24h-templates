@@ -1,0 +1,65 @@
+% >>> typage-template beamer@2026.10.1 variant=wide
+\documentclass[aspectratio=169]{beamer}
+\usepackage{fontspec}
+\usetheme{Madrid}
+% <<< typage-template
+\usepackage{booktabs}
+
+\title[Short Title]{Presentation Title}
+\subtitle{Subtitle of the Talk}
+\author{Author Name}
+\institute{Department, University}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Motivation}
+\begin{frame}{Motivation}
+  \begin{itemize}
+    \item The problem in one sentence
+    \item Why it matters
+    \item What is missing today
+  \end{itemize}
+\end{frame}
+
+\section{Approach}
+\begin{frame}{Approach}
+  The method minimizes
+  \begin{equation*}
+    \frac{1}{n} \sum_{i=1}^{n} \ell\bigl(f_\theta(x_i), y_i\bigr) .
+  \end{equation*}
+  \begin{block}{Key idea}
+    State the key idea in one or two lines.
+  \end{block}
+\end{frame}
+
+\section{Results}
+\begin{frame}{Results}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Method   & Accuracy (\%) & Time (s) \\
+    \midrule
+    Baseline & 81.2          & 12.4     \\
+    Ours     & 84.7          & 10.9     \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+\section{Summary}
+\begin{frame}{Summary}
+  \begin{itemize}
+    \item Main takeaway
+    \item Next steps
+  \end{itemize}
+\end{frame}
+
+\end{document}

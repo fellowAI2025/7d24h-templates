@@ -1,0 +1,118 @@
+{
+  "schema": "typage-template/v1",
+  "kind": "general",
+  "venue": null,
+  "entry": "main.tex",
+  "engine": {
+    "policy": "tectonic-only",
+    "compiler": "tectonic",
+    "bundle": "v33",
+    "biber": null
+  },
+  "officialFiles": [],
+  "templateRegion": {
+    "documentClass": "physlab",
+    "ownedPackages": [],
+    "ownedCommands": []
+  },
+  "variants": [
+    {
+      "id": "boxed",
+      "label": "Framed body, like the paper form",
+      "labelZh": "正文加框（同纸质报告）",
+      "classOptions": [
+        "boxed"
+      ]
+    },
+    {
+      "id": "plain",
+      "label": "No frame",
+      "labelZh": "不加框",
+      "classOptions": [
+        "plain"
+      ]
+    },
+    {
+      "id": "boxed-wuhao",
+      "label": "Framed, size Wu Hao (10.5 pt)",
+      "labelZh": "加框 · 五号字",
+      "classOptions": [
+        "boxed",
+        "zihao=5"
+      ]
+    }
+  ],
+  "frontMatter": {
+    "serializer": "generic",
+    "fields": [
+      "title",
+      "authors",
+      "date"
+    ]
+  },
+  "bibliography": {
+    "system": "none",
+    "style": null,
+    "citation": "none",
+    "citeCommands": {}
+  },
+  "classCommands": [
+    {
+      "command": "\\school",
+      "to": null
+    },
+    {
+      "command": "\\reporttitle",
+      "to": null
+    },
+    {
+      "command": "\\studentid",
+      "to": null
+    },
+    {
+      "command": "\\classname",
+      "to": null
+    },
+    {
+      "command": "\\partner",
+      "to": null
+    },
+    {
+      "command": "\\expno",
+      "to": null
+    },
+    {
+      "command": "\\cabinet",
+      "to": null
+    },
+    {
+      "command": "\\room",
+      "to": null
+    },
+    {
+      "command": "\\grade",
+      "to": null
+    }
+  ],
+  "requirements": null,
+  "visualTheme": {
+    "fontFamily": "FandolSong",
+    "baseSizePt": 12,
+    "lineSpread": 1.3,
+    "paper": "a4"
+  },
+  "roles": {
+    "main.tex": "sample",
+    "physlab.cls": "class"
+  },
+  "verified": {
+    "compiler": "tectonic 0.17.0 / bundle v33",
+    "systemTex": false,
+    "officialFilesMatch": null,
+    "pages": 3,
+    "visualRaw": null,
+    "fieldsDetected": null,
+    "at": "2026-10-30T11:04:10Z",
+    "by": "7d24h-templates/tools 1.0.0"
+  }
+}
