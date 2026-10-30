@@ -1,0 +1,1415 @@
+{
+  "schema": "7d24h-template-catalog/v1",
+  "generatedAt": "2026-10-30T13:14:00Z",
+  "categories": {
+    "spage": [
+      {
+        "id": "notes",
+        "label": "Notes",
+        "labelZh": "笔记"
+      },
+      {
+        "id": "meeting",
+        "label": "Meeting minutes",
+        "labelZh": "会议纪要"
+      },
+      {
+        "id": "plan",
+        "label": "Reports and plans",
+        "labelZh": "周报与计划"
+      },
+      {
+        "id": "proposal",
+        "label": "Proposals and specs",
+        "labelZh": "方案与说明"
+      }
+    ],
+    "typage": [
+      {
+        "id": "conference",
+        "label": "Conference",
+        "labelZh": "会议"
+      },
+      {
+        "id": "journal",
+        "label": "Journal",
+        "labelZh": "期刊"
+      },
+      {
+        "id": "thesis",
+        "label": "Thesis · University",
+        "labelZh": "学位论文 · 大学"
+      },
+      {
+        "id": "general",
+        "label": "General writing",
+        "labelZh": "通用写作"
+      },
+      {
+        "id": "slides-cv",
+        "label": "Slides and CV",
+        "labelZh": "演示与简历"
+      }
+    ],
+    "mpage": [
+      {
+        "id": "general",
+        "label": "General long document",
+        "labelZh": "通用长文档"
+      },
+      {
+        "id": "bid",
+        "label": "Bid",
+        "labelZh": "投标书"
+      },
+      {
+        "id": "company",
+        "label": "Company master",
+        "labelZh": "公司母版"
+      },
+      {
+        "id": "tender",
+        "label": "Tender",
+        "labelZh": "招标书"
+      },
+      {
+        "id": "legal",
+        "label": "Legal document",
+        "labelZh": "法律文书"
+      },
+      {
+        "id": "report",
+        "label": "Professional report",
+        "labelZh": "专业报告"
+      },
+      {
+        "id": "book",
+        "label": "Book",
+        "labelZh": "书籍"
+      },
+      {
+        "id": "paper",
+        "label": "Paper",
+        "labelZh": "论文"
+      },
+      {
+        "id": "manual",
+        "label": "Manual",
+        "labelZh": "手册"
+      },
+      {
+        "id": "custom",
+        "label": "Custom",
+        "labelZh": "自定义"
+      }
+    ]
+  },
+  "templates": [
+    {
+      "docFormat": "typage",
+      "id": "acl",
+      "version": "2026.10.1",
+      "name": "ACL / ARR Paper",
+      "nameZh": "ACL / ARR 论文",
+      "category": "conference",
+      "tags": [
+        "ACL",
+        "ARR",
+        "NLP",
+        "EMNLP",
+        "NAACL",
+        "two-column"
+      ],
+      "description": "Paper for ACL Rolling Review and the *ACL conferences (ACL, EMNLP, NAACL, EACL, ...) with the official acl.sty and acl_natbib.bst from acl-org/acl-style-files, unmodified. Variants: review (anonymous, line numbers), final, preprint.",
+      "descriptionZh": "用于 ACL Rolling Review 与 *ACL 系列会议（ACL、EMNLP、NAACL、EACL 等）的论文，使用 acl-org/acl-style-files 中的官方 acl.sty 与 acl_natbib.bst，未改动。变体：评审版（匿名、行号）、终稿、预印本。",
+      "license": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "e248577cb9589c266c32b91e60e5f4c8750d85ddc5960da9003c2cd0ded4b054",
+      "licenseSha256": "cf7c4363a77dae2c2940686ddfa68c4cb2472d60c5aba48d919f5ee3e5d10bfb",
+      "releaseTag": "templates-2026.10.30",
+      "files": 7,
+      "bytes": 19517,
+      "sha256": "254c628fa394437b748895dec4be77b3adcd8a8124a7ab28a053dd603034832d",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-acl@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-acl@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-acl@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-acl@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "ACL Rolling Review",
+          "labelZh": "ACL Rolling Review"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "review",
+            "label": "Review (anonymous, line numbers)",
+            "labelZh": "评审版（匿名、行号）"
+          },
+          {
+            "id": "final",
+            "label": "Final (camera-ready)",
+            "labelZh": "终稿"
+          },
+          {
+            "id": "preprint",
+            "label": "Preprint (page numbers)",
+            "labelZh": "预印本（带页码）"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "acm-sigconf",
+      "version": "2026.10.1",
+      "name": "ACM Conference Paper (acmart sigconf)",
+      "nameZh": "ACM 会议论文（acmart sigconf）",
+      "category": "conference",
+      "tags": [
+        "ACM",
+        "acmart",
+        "sigconf",
+        "two-column"
+      ],
+      "description": "ACM conference paper in the sigconf format with the official acmart 2.20 class and ACM-Reference-Format.bst, unmodified. Variants: anonymous review, final, author draft.",
+      "descriptionZh": "ACM 会议论文（sigconf 格式），使用官方 acmart 2.20 类与 ACM-Reference-Format.bst，未改动。变体：匿名评审、终稿、作者稿。",
+      "license": "CC0-1.0 AND LPPL-1.3c AND LicenseRef-Public-Domain",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "6b8a91f7c4d2e6d7ef4b2ad2e0dd03e5a104d9997aab2666b1a4bf4a8a01d627",
+      "licenseSha256": "b006fa36975093d5e6a38cb817c6b3138b3a6a0d2276f31061581f4c21cc4d56",
+      "releaseTag": "templates-2026.10.30",
+      "files": 7,
+      "bytes": 50544,
+      "sha256": "61774a5a1ba5af5280176f56c007372ad2a5470dd080a1cb0aac5f923a84e105",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-acm-sigconf@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-acm-sigconf@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-acm-sigconf@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-acm-sigconf@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "ACM conference",
+          "labelZh": "ACM 会议"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "review",
+            "label": "Anonymous review",
+            "labelZh": "匿名评审"
+          },
+          {
+            "id": "final",
+            "label": "Final",
+            "labelZh": "终稿"
+          },
+          {
+            "id": "authordraft",
+            "label": "Author draft",
+            "labelZh": "作者稿"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "cvpr",
+      "version": "2026.10.1",
+      "name": "CVPR 2027 Paper",
+      "nameZh": "CVPR 2027 论文",
+      "category": "conference",
+      "tags": [
+        "CVPR",
+        "computer vision",
+        "IEEE/CVF",
+        "two-column"
+      ],
+      "description": "CVPR 2027 paper with the official cvpr.sty and ieeenat_fullname.bst from the cvpr-org author kit (release CVPR2027-v1), unmodified. Variants: review (anonymous, line numbers), camera-ready, arXiv (page numbers).",
+      "descriptionZh": "CVPR 2027 论文，使用 cvpr-org 作者工具包（发布 CVPR2027-v1）中的官方 cvpr.sty 与 ieeenat_fullname.bst，未改动。变体：评审版（匿名、行号）、终稿、arXiv（带页码）。",
+      "license": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "28c8f6b48785e8020a3ee653dfae911779297d0a394fab4bafdb235be67c7ecc",
+      "licenseSha256": "d5134a4706ed779aac50cf7c8991d7b9ffff4aa008a5c6c63ce3f7abbe0fd119",
+      "releaseTag": "templates-2026.10.30",
+      "files": 7,
+      "bytes": 15799,
+      "sha256": "291ed00a894976a467850c79059fdd822da95d6ceed61c48117d55e4955276fd",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-cvpr@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-cvpr@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-cvpr@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-cvpr@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "CVPR 2027",
+          "labelZh": "CVPR 2027"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "review",
+            "label": "Review (anonymous, line numbers)",
+            "labelZh": "评审版（匿名、行号）"
+          },
+          {
+            "id": "final",
+            "label": "Camera-ready",
+            "labelZh": "终稿"
+          },
+          {
+            "id": "arxiv",
+            "label": "arXiv (page numbers)",
+            "labelZh": "arXiv（带页码）"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "iclr",
+      "version": "2026.10.1",
+      "name": "ICLR 2027 Conference Paper",
+      "nameZh": "ICLR 2027 会议论文",
+      "category": "conference",
+      "tags": [
+        "ICLR",
+        "machine learning",
+        "iclr2027"
+      ],
+      "description": "ICLR 2027 conference paper with the official iclr2027_conference.sty and .bst and math_commands.tex from ICLR/Master-Template, unmodified. Variants: anonymous submission and camera-ready (\\iclrfinalcopy).",
+      "descriptionZh": "ICLR 2027 会议论文，使用 ICLR/Master-Template 中的官方 iclr2027_conference.sty、.bst 与 math_commands.tex，未改动。变体：匿名投稿、终稿（\\iclrfinalcopy）。",
+      "license": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "74b5e13d19e2a44dfa152750b1c9d1aefa032d96c950aa05673dfedf4a8811a0",
+      "licenseSha256": "628c538cf7e08f84dca164fadad835efdac7eb8500145007121e1efb07acec44",
+      "releaseTag": "templates-2026.10.30",
+      "files": 9,
+      "bytes": 24228,
+      "sha256": "f6de3eddb03de19caa3e915323e6ab342e8451e60616d365ac4237d80eb3ae32",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-iclr@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-iclr@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-iclr@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-iclr@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "ICLR 2027",
+          "labelZh": "ICLR 2027"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "submission",
+            "label": "Anonymous submission",
+            "labelZh": "匿名投稿"
+          },
+          {
+            "id": "final",
+            "label": "Camera-ready",
+            "labelZh": "终稿"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "icml",
+      "version": "2026.10.1",
+      "name": "ICML 2026 Paper",
+      "nameZh": "ICML 2026 论文",
+      "category": "conference",
+      "tags": [
+        "ICML",
+        "machine learning",
+        "icml2026",
+        "two-column"
+      ],
+      "description": "ICML 2026 paper with the official icml2026.sty (2025/10/29 v2.0), icml2026.bst and the support files of the official style kit, all unmodified. Variants: anonymous submission, accepted (camera-ready), preprint.",
+      "descriptionZh": "ICML 2026 论文，使用官方 icml2026.sty（2025/10/29 v2.0）、icml2026.bst 及官方样式包附带的支持文件，均未改动。变体：匿名投稿、录用终稿、预印本。",
+      "license": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "31a35f36b6ccf5e005d9b6c62e3a02a83c601a65e104c742e8fd6abf7327b83e",
+      "licenseSha256": "b4a7cc657b64e6c425370797dbe5725e308ea2844b7e4040bb51102e37106473",
+      "releaseTag": "templates-2026.10.30",
+      "files": 10,
+      "bytes": 29532,
+      "sha256": "5c6db648c0a335ded96b3fa8efa3aa34fbf2ab112cb7672715c0565db0ce3099",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-icml@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-icml@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-icml@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-icml@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "ICML 2026",
+          "labelZh": "ICML 2026"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "submission",
+            "label": "Anonymous submission",
+            "labelZh": "匿名投稿"
+          },
+          {
+            "id": "accepted",
+            "label": "Accepted (camera-ready)",
+            "labelZh": "录用终稿"
+          },
+          {
+            "id": "preprint",
+            "label": "Preprint (arXiv)",
+            "labelZh": "预印本（arXiv）"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "ieee-conference",
+      "version": "2026.10.1",
+      "name": "IEEE Conference Paper (IEEEtran)",
+      "nameZh": "IEEE 会议论文（IEEEtran）",
+      "category": "conference",
+      "tags": [
+        "IEEE",
+        "IEEEtran",
+        "two-column"
+      ],
+      "description": "IEEE conference paper with the official IEEEtran class and IEEEtran.bst 1.8b / 1.14, used unmodified from the built-in bundle.",
+      "descriptionZh": "IEEE 会议论文，使用官方 IEEEtran 类与 IEEEtran.bst（1.8b / 1.14），取自内置 bundle，未改动。",
+      "license": "CC0-1.0",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "d4d973e2d306f01364448e5fbfb6a0af5990134ec9f3ab2b4111ddebff83f0a2",
+      "licenseSha256": "304253fb743798a048aa8f8bd90d26df9eb005b6ad55793894c8f3d0107d5234",
+      "releaseTag": "templates-2026.10.30",
+      "files": 5,
+      "bytes": 3886,
+      "sha256": "7e3b3b83b67a60cd700d7222d04dc44a08425c48b71f849fbe0f9fb97322a961",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-ieee-conference@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-ieee-conference@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-ieee-conference@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-ieee-conference@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "IEEE conference",
+          "labelZh": "IEEE 会议"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "letter",
+            "label": "Conference, US Letter",
+            "labelZh": "会议 · US Letter"
+          },
+          {
+            "id": "a4",
+            "label": "Conference, A4",
+            "labelZh": "会议 · A4"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "neurips",
+      "version": "2026.10.1",
+      "name": "NeurIPS 2026 Paper",
+      "nameZh": "NeurIPS 2026 论文",
+      "category": "conference",
+      "tags": [
+        "NeurIPS",
+        "machine learning",
+        "neurips_2026"
+      ],
+      "description": "NeurIPS 2026 paper with the official neurips_2026.sty (2026-01-29) and the NeurIPS paper checklist, both unmodified from the official formatting-instructions zip. Variants: anonymous submission, camera-ready, preprint.",
+      "descriptionZh": "NeurIPS 2026 论文，使用官方 neurips_2026.sty（2026-01-29）与 NeurIPS 论文自查表，均取自官方格式说明 zip，未改动。变体：匿名投稿、终稿、预印本。",
+      "license": "CC0-1.0 AND LicenseRef-Official-Venue-Files",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "b2d2efa903b65e76d3e15c68ec96f6fead04446e777936532c3aaffa5c4d1c83",
+      "licenseSha256": "aaf23d638f6d7299a57c23926a2c29651f2fb33e32224aef7dcf649eb0ed15d2",
+      "releaseTag": "templates-2026.10.30",
+      "files": 7,
+      "bytes": 15734,
+      "sha256": "e07f11db6bdc98a0249ea7078ca52e4627d70473f661592dfbfa551ba81e72f1",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-neurips@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-neurips@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-neurips@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-neurips@2026.10.1.page-1.webp",
+          "typage-neurips@2026.10.1.page-2.webp",
+          "typage-neurips@2026.10.1.page-3.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "NeurIPS 2026",
+          "labelZh": "NeurIPS 2026"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "submission",
+            "label": "Anonymous submission (main track)",
+            "labelZh": "匿名投稿（主会）"
+          },
+          {
+            "id": "final",
+            "label": "Camera-ready (main track)",
+            "labelZh": "终稿（主会）"
+          },
+          {
+            "id": "preprint",
+            "label": "Preprint (arXiv)",
+            "labelZh": "预印本（arXiv）"
+          }
+        ],
+        "pages": 9,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "springer-lncs",
+      "version": "2026.10.1",
+      "name": "Springer LNCS Proceedings Paper",
+      "nameZh": "Springer LNCS 会议论文",
+      "category": "conference",
+      "tags": [
+        "Springer",
+        "LNCS",
+        "llncs"
+      ],
+      "description": "Springer Lecture Notes in Computer Science paper with the official llncs.cls 2.26 and splncs04.bst, shipped unmodified.",
+      "descriptionZh": "Springer LNCS 会议论文，随模板附带官方 llncs.cls 2.26 与 splncs04.bst，未改动。",
+      "license": "CC0-1.0 AND CC-BY-4.0 AND LPPL-1.3c",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "6f2b30b9b0982e1597aca0deb112cf893c47d490796e49ac788ffbb8df5540c3",
+      "licenseSha256": "94ef994a49ee538e79684c8f0cf19a6cdf60135ae98d2608486bf9b613884280",
+      "releaseTag": "templates-2026.10.30",
+      "files": 7,
+      "bytes": 22066,
+      "sha256": "6e47e721bf758acd25d9e0d4d15e97a896dff7db043d7242edfa13231e7919c7",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-springer-lncs@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-springer-lncs@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-springer-lncs@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-springer-lncs@2026.10.1.page-1.webp",
+          "typage-springer-lncs@2026.10.1.page-2.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "Springer LNCS",
+          "labelZh": "Springer LNCS"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "runningheads",
+            "label": "With running heads",
+            "labelZh": "带页眉"
+          },
+          {
+            "id": "plain",
+            "label": "Without running heads",
+            "labelZh": "不带页眉"
+          }
+        ],
+        "pages": 2,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "acm-journal",
+      "version": "2026.10.1",
+      "name": "ACM Journal Article (acmart acmsmall)",
+      "nameZh": "ACM 期刊论文（acmart acmsmall）",
+      "category": "journal",
+      "tags": [
+        "ACM",
+        "acmart",
+        "acmsmall",
+        "journal"
+      ],
+      "description": "ACM journal article in the acmsmall format with the official acmart 2.20 class and ACM-Reference-Format.bst, unmodified. Variants: anonymous review, final.",
+      "descriptionZh": "ACM 期刊论文（acmsmall 格式），使用官方 acmart 2.20 类与 ACM-Reference-Format.bst，未改动。变体：匿名评审、终稿。",
+      "license": "CC0-1.0 AND LPPL-1.3c AND LicenseRef-Public-Domain",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "dcea3d8d7c87d42ac0316e26ed5b1a42234136fff4993d5f85e58450e55dbe26",
+      "licenseSha256": "dcb0038953e33924ee2708a9e655b27611f54b14cba902424cf2a446c9533707",
+      "releaseTag": "templates-2026.10.30",
+      "files": 7,
+      "bytes": 50488,
+      "sha256": "b532179ef2b8ae398083161e91d260b94651cc488c4cef84608fa4687efae341",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-acm-journal@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-acm-journal@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-acm-journal@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-acm-journal@2026.10.1.page-1.webp",
+          "typage-acm-journal@2026.10.1.page-2.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "ACM journal",
+          "labelZh": "ACM 期刊"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "review",
+            "label": "Anonymous review",
+            "labelZh": "匿名评审"
+          },
+          {
+            "id": "final",
+            "label": "Final",
+            "labelZh": "终稿"
+          }
+        ],
+        "pages": 2,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "elsarticle",
+      "version": "2026.10.1",
+      "name": "Elsevier Journal Article (elsarticle)",
+      "nameZh": "Elsevier 期刊论文（elsarticle）",
+      "category": "journal",
+      "tags": [
+        "Elsevier",
+        "elsarticle",
+        "journal"
+      ],
+      "description": "Article for Elsevier journals with the official elsarticle 3.5 class and its numeric and author-year BibTeX styles, unmodified. Variants: preprint, review (double-spaced), final 1p, 3p and 5p layouts.",
+      "descriptionZh": "Elsevier 期刊论文，使用官方 elsarticle 3.5 类及其数字与作者-年份 BibTeX 样式，未改动。变体：预印本、评审稿（双倍行距）、终稿 1p / 3p / 5p 版式。",
+      "license": "CC0-1.0 AND LPPL-1.3c",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "3b724669cd5f705303465311b712def654874ca84976cfdf8fab7b05a4c2bffb",
+      "licenseSha256": "06fea7eb2d531d11d7975e8abd25f405a44515bcee3cc3d0ba21fb83c6f28694",
+      "releaseTag": "templates-2026.10.30",
+      "files": 9,
+      "bytes": 33560,
+      "sha256": "16cdbabcf2ec57f16cafa9f0f34ecbdac4ed25fd772c371a08dfb32977719d08",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-elsarticle@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-elsarticle@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-elsarticle@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-elsarticle@2026.10.1.page-1.webp",
+          "typage-elsarticle@2026.10.1.page-2.webp",
+          "typage-elsarticle@2026.10.1.page-3.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "Elsevier journal",
+          "labelZh": "Elsevier 期刊"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "preprint",
+            "label": "Preprint (12 pt)",
+            "labelZh": "预印本（12 pt）"
+          },
+          {
+            "id": "review",
+            "label": "Review (double-spaced)",
+            "labelZh": "评审稿（双倍行距）"
+          },
+          {
+            "id": "final-1p",
+            "label": "Final, 1p layout",
+            "labelZh": "终稿 · 1p 版式"
+          },
+          {
+            "id": "final-3p",
+            "label": "Final, 3p two-column",
+            "labelZh": "终稿 · 3p 双栏"
+          },
+          {
+            "id": "final-5p",
+            "label": "Final, 5p two-column",
+            "labelZh": "终稿 · 5p 双栏"
+          }
+        ],
+        "pages": 3,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "ieee-journal",
+      "version": "2026.10.1",
+      "name": "IEEE Journal Article (IEEEtran)",
+      "nameZh": "IEEE 期刊论文（IEEEtran）",
+      "category": "journal",
+      "tags": [
+        "IEEE",
+        "IEEEtran",
+        "transactions"
+      ],
+      "description": "IEEE journal / transactions article with the official IEEEtran class and IEEEtran.bst 1.8b / 1.14, used unmodified from the built-in bundle.",
+      "descriptionZh": "IEEE 期刊论文，使用官方 IEEEtran 类与 IEEEtran.bst（1.8b / 1.14），取自内置 bundle，未改动。",
+      "license": "CC0-1.0",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "7bf7fcaee5a9be2fcdd259c322d81562c9533fcbcb23eed646525f3c6223a7d0",
+      "licenseSha256": "b72887728caf2231a4f7eacc861a7e284be3d7dcff98c0acb96afd02f6885b50",
+      "releaseTag": "templates-2026.10.30",
+      "files": 5,
+      "bytes": 4047,
+      "sha256": "b7fd8c20b6847bf07edc77f2455ae76c809205658b1970d43b3396f805073979",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-ieee-journal@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-ieee-journal@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-ieee-journal@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-ieee-journal@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "IEEE journal",
+          "labelZh": "IEEE 期刊"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "journal",
+            "label": "Journal, two columns",
+            "labelZh": "期刊 · 双栏"
+          },
+          {
+            "id": "draft",
+            "label": "Draft, one column",
+            "labelZh": "草稿 · 单栏"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "revtex-aps",
+      "version": "2026.10.1",
+      "name": "APS Physical Review Article (REVTeX 4.2)",
+      "nameZh": "APS 物理期刊论文（REVTeX 4.2）",
+      "category": "journal",
+      "tags": [
+        "APS",
+        "Physical Review",
+        "REVTeX",
+        "physics",
+        "two-column"
+      ],
+      "description": "Article for the American Physical Society journals (Physical Review Letters, Physical Review A-E, ...) with the official REVTeX 4.2f class files and apsrev4-2.bst, unmodified. Variants: PRL and PRB reprint layouts, single-column preprint.",
+      "descriptionZh": "美国物理学会（APS）期刊论文（Physical Review Letters、Physical Review A–E 等），使用官方 REVTeX 4.2f 类文件与 apsrev4-2.bst，未改动。变体：PRL 与 PRB 排版样式、单栏预印本。",
+      "license": "CC0-1.0 AND LPPL-1.3c",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "1a149c97ea5c3dd5ac56adad8b4a295de72183fcc5eefb26d328c2bbbffe17d6",
+      "licenseSha256": "b48b08d1a638bc9422f2dfe75f4224875d3e5e0cdb5d9d3c81eb3c453a5a99c2",
+      "releaseTag": "templates-2026.10.30",
+      "files": 18,
+      "bytes": 136993,
+      "sha256": "98c8094a93676fe978e08c22b1fa07e2d930ff86acd09d3016a89e8a5e6b940f",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-revtex-aps@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-revtex-aps@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-revtex-aps@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-revtex-aps@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "official",
+        "venue": {
+          "profileId": null,
+          "label": "APS Physical Review",
+          "labelZh": "APS Physical Review"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "prl",
+            "label": "Physical Review Letters (reprint)",
+            "labelZh": "Physical Review Letters（排版样式）"
+          },
+          {
+            "id": "prb",
+            "label": "Physical Review B (reprint)",
+            "labelZh": "Physical Review B（排版样式）"
+          },
+          {
+            "id": "preprint",
+            "label": "Preprint (single column)",
+            "labelZh": "预印本（单栏）"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "fduthesis",
+      "version": "2026.10.1",
+      "name": "Fudan University Thesis (fduthesis)",
+      "nameZh": "复旦大学学位论文（fduthesis）",
+      "category": "thesis",
+      "tags": [
+        "复旦大学",
+        "Fudan",
+        "fduthesis",
+        "学位论文",
+        "中文"
+      ],
+      "description": "Fudan University bachelor, master and doctoral thesis with the official fduthesis 0.9a class, configuration and logos, unmodified, using the Fandol and XITS fonts of the built-in bundle. Variants: doctor, master, bachelor.",
+      "descriptionZh": "复旦大学本科、硕士、博士学位论文，使用官方 fduthesis 0.9a 文档类、配置与校徽文件，未改动；字体使用内置 bundle 的 Fandol 与 XITS。变体：博士、硕士、本科。",
+      "license": "CC0-1.0 AND LPPL-1.3c",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "c6939bd9ca255d023a72310e390dfcb63b2b5a194fd31318ef64adb82bc90a48",
+      "licenseSha256": "dbd5b15b45b2b887ae5624cdc91849bc6fbe423443092deaf9f57f09d88b91d8",
+      "releaseTag": "templates-2026.10.30",
+      "files": 11,
+      "bytes": 67762,
+      "sha256": "75acc8b5fdbb002783bbedd516da08910a0ced0f0e53ba904ce2e182c7e007c9",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-fduthesis@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-fduthesis@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-fduthesis@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-fduthesis@2026.10.1.page-1.webp",
+          "typage-fduthesis@2026.10.1.page-2.webp",
+          "typage-fduthesis@2026.10.1.page-3.webp"
+        ]
+      },
+      "typage": {
+        "kind": "thesis",
+        "venue": {
+          "profileId": null,
+          "label": "Fudan University",
+          "labelZh": "复旦大学"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "doctor",
+            "label": "Doctor",
+            "labelZh": "博士"
+          },
+          {
+            "id": "master",
+            "label": "Master",
+            "labelZh": "硕士"
+          },
+          {
+            "id": "bachelor",
+            "label": "Bachelor",
+            "labelZh": "本科"
+          }
+        ],
+        "pages": 23,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "pkuthss",
+      "version": "2026.10.1",
+      "name": "Peking University Thesis (pkuthss)",
+      "nameZh": "北京大学学位论文（pkuthss）",
+      "category": "thesis",
+      "tags": [
+        "北京大学",
+        "Peking University",
+        "pkuthss",
+        "学位论文",
+        "中文",
+        "biblatex"
+      ],
+      "description": "Peking University dissertation with the official pkuthss 1.9.4 class and logos and the copyright and originality statement pages of its example, unmodified; references with biblatex-caspervector. Variants: standard, strict school format (ugly), double-blind.",
+      "descriptionZh": "北京大学学位论文，使用官方 pkuthss 1.9.4 文档类与校徽文件，以及其示例中的版权声明和原创性声明页，均未改动；参考文献使用 biblatex-caspervector。变体：标准、严格校规格式（ugly）、双盲评审版。",
+      "license": "CC0-1.0 AND LPPL-1.3c AND BSD-3-Clause",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "c3c83f16259145837a08be6bff54a096d2cf052155a6c38d1cd5458729053bdd",
+      "licenseSha256": "e5b778d29d9e98999c33e535bdbc06f48205e6dcf582612b25d75e7871ed0b3c",
+      "releaseTag": "templates-2026.10.30",
+      "files": 12,
+      "bytes": 26049,
+      "sha256": "c85bdd7878eb27253123ecb07e42e9fec628976635c4b3bb234ee0b10e586e12",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-pkuthss@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-pkuthss@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-pkuthss@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-pkuthss@2026.10.1.page-1.webp",
+          "typage-pkuthss@2026.10.1.page-2.webp",
+          "typage-pkuthss@2026.10.1.page-3.webp"
+        ]
+      },
+      "typage": {
+        "kind": "thesis",
+        "venue": {
+          "profileId": null,
+          "label": "Peking University",
+          "labelZh": "北京大学"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "standard",
+            "label": "Standard",
+            "labelZh": "标准"
+          },
+          {
+            "id": "ugly",
+            "label": "Strict school format (ugly)",
+            "labelZh": "严格校规格式（ugly）"
+          },
+          {
+            "id": "blind",
+            "label": "Double-blind review",
+            "labelZh": "双盲评审版"
+          }
+        ],
+        "pages": 25,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "thesis-en",
+      "version": "2026.10.1",
+      "name": "Thesis (English, generic)",
+      "nameZh": "英文学位论文（通用）",
+      "category": "thesis",
+      "tags": [
+        "thesis",
+        "book",
+        "English"
+      ],
+      "description": "A generic English thesis on the book class: title page, abstract, acknowledgements, contents, chapters, appendix and references; one- or two-sided.",
+      "descriptionZh": "基于 book 类的通用英文学位论文：标题页、摘要、致谢、目录、章节、附录与参考文献；单面或双面。",
+      "license": "CC0-1.0",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "82185c7484f68505eba8dcac977d2cccc2f51080a36ba5273e6edc2ec829a11a",
+      "licenseSha256": "ea54471fe49ed26fe777b9f1f47ef3b0b9e31b97d512e5ae002ceaeccd381e41",
+      "releaseTag": "templates-2026.10.30",
+      "files": 5,
+      "bytes": 3916,
+      "sha256": "98021c2ef6a4f9f31e20733b76508a0a91c524be8889a2a97158556dca9647b2",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-thesis-en@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-thesis-en@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-thesis-en@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-thesis-en@2026.10.1.page-1.webp",
+          "typage-thesis-en@2026.10.1.page-2.webp",
+          "typage-thesis-en@2026.10.1.page-3.webp"
+        ]
+      },
+      "typage": {
+        "kind": "thesis",
+        "venue": null,
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "oneside",
+            "label": "A4, one-sided (screen)",
+            "labelZh": "A4 · 单面（屏幕阅读）"
+          },
+          {
+            "id": "twoside",
+            "label": "A4, two-sided (print)",
+            "labelZh": "A4 · 双面（打印）"
+          },
+          {
+            "id": "letter",
+            "label": "US Letter, one-sided",
+            "labelZh": "US Letter · 单面"
+          }
+        ],
+        "pages": 12,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": null
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "thuthesis",
+      "version": "2026.10.1",
+      "name": "Tsinghua University Thesis (ThuThesis)",
+      "nameZh": "清华大学学位论文（ThuThesis）",
+      "category": "thesis",
+      "tags": [
+        "清华大学",
+        "Tsinghua",
+        "ThuThesis",
+        "学位论文",
+        "中文"
+      ],
+      "description": "Tsinghua University bachelor, master and doctoral thesis with the official ThuThesis 7.7.1 class, bibliography styles and logos, unmodified, using the Fandol fonts of the built-in bundle. Variants: master, doctor, bachelor.",
+      "descriptionZh": "清华大学本科、硕士、博士学位论文，使用官方 ThuThesis 7.7.1 文档类、参考文献样式与校徽文件，未改动；字体使用内置 bundle 的 Fandol。变体：硕士、博士、本科。",
+      "license": "CC0-1.0 AND LPPL-1.3c",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "d82f54391478e4a8c60bc6e02ed820400886a6551e5727adf332fa36dc4cf7b7",
+      "licenseSha256": "fe11b63ca1840810b1293b9637d20f82d6dc4de1129322a61a8bb9b3571c0a0c",
+      "releaseTag": "templates-2026.10.30",
+      "files": 18,
+      "bytes": 193354,
+      "sha256": "9a08c79b761b0f23a83586b0fb741357d273e72a467d0e3519c2840615c23367",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-thuthesis@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-thuthesis@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-thuthesis@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-thuthesis@2026.10.1.page-1.webp",
+          "typage-thuthesis@2026.10.1.page-2.webp",
+          "typage-thuthesis@2026.10.1.page-3.webp"
+        ]
+      },
+      "typage": {
+        "kind": "thesis",
+        "venue": {
+          "profileId": null,
+          "label": "Tsinghua University",
+          "labelZh": "清华大学"
+        },
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "master",
+            "label": "Master",
+            "labelZh": "硕士"
+          },
+          {
+            "id": "doctor",
+            "label": "Doctor",
+            "labelZh": "博士"
+          },
+          {
+            "id": "bachelor",
+            "label": "Bachelor",
+            "labelZh": "本科"
+          }
+        ],
+        "pages": 19,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": true
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "article",
+      "version": "2026.10.1",
+      "name": "Article",
+      "nameZh": "通用论文（article）",
+      "category": "general",
+      "tags": [
+        "article",
+        "general",
+        "single column"
+      ],
+      "description": "A general-purpose article: title, authors, abstract, sections, an equation, a table and BibTeX references.",
+      "descriptionZh": "通用论文：标题、作者、摘要、章节、公式、表格与 BibTeX 参考文献。",
+      "license": "CC0-1.0",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "adb3d002a87c4b3ed2a64ef8ef4989fca4226a29c11486ee8d719d1c808b7d2c",
+      "licenseSha256": "158e54a7434b2778007a5d8a2f3add51b67cdd3413053d96cd791df0d342273e",
+      "releaseTag": "templates-2026.10.30",
+      "files": 5,
+      "bytes": 3442,
+      "sha256": "224e03cac65cdae0b9da5352536eabfab74c0cdf89cffc60b0e6b849fafe4179",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-article@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-article@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-article@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-article@2026.10.1.page-1.webp",
+          "typage-article@2026.10.1.page-2.webp"
+        ]
+      },
+      "typage": {
+        "kind": "general",
+        "venue": null,
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "a4",
+            "label": "A4, 11 pt",
+            "labelZh": "A4 · 11 磅"
+          },
+          {
+            "id": "letter",
+            "label": "US Letter, 11 pt",
+            "labelZh": "US Letter · 11 磅"
+          },
+          {
+            "id": "twocolumn",
+            "label": "Two columns, A4, 10 pt",
+            "labelZh": "双栏 · A4 · 10 磅"
+          }
+        ],
+        "pages": 2,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": null
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "ctexart",
+      "version": "2026.10.1",
+      "name": "Chinese Article (ctexart)",
+      "nameZh": "中文论文（ctexart）",
+      "category": "general",
+      "tags": [
+        "中文",
+        "ctex",
+        "GB/T 7714"
+      ],
+      "description": "A Chinese article with ctexart and the Fandol fonts from the built-in bundle (same result on macOS, Windows and Linux), GB/T 7714 numeric references.",
+      "descriptionZh": "ctexart 中文论文，使用内置 bundle 的 Fandol 字体（三个平台结果一致），参考文献为 GB/T 7714 顺序编码制。",
+      "license": "CC0-1.0",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "7a092caf4bdc130e0a6d107c065fa6edcf2bcb36557fd8233f30b06629049962",
+      "licenseSha256": "7aaf9167d21ab5b152fbd47dbf316255132e329890f3e872b8b4836e04e52faf",
+      "releaseTag": "templates-2026.10.30",
+      "files": 5,
+      "bytes": 3849,
+      "sha256": "d79d259aa678c9a8c2105856e0b8949732d66f90c1d8f4210633f7f7db6e9c60",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-ctexart@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-ctexart@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-ctexart@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-ctexart@2026.10.1.page-1.webp",
+          "typage-ctexart@2026.10.1.page-2.webp"
+        ]
+      },
+      "typage": {
+        "kind": "general",
+        "venue": null,
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "xiaosi",
+            "label": "A4, size Xiao Si (12 pt)",
+            "labelZh": "A4 · 小四"
+          },
+          {
+            "id": "wuhao",
+            "label": "A4, size Wu Hao (10.5 pt)",
+            "labelZh": "A4 · 五号"
+          }
+        ],
+        "pages": 2,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": null
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "physics-lab-report",
+      "version": "2026.10.1",
+      "name": "Physics Lab Report (Chinese)",
+      "nameZh": "物理实验报告",
+      "category": "general",
+      "tags": [
+        "物理实验",
+        "实验报告",
+        "中文",
+        "siunitx",
+        "pgfplots"
+      ],
+      "description": "Chinese physics lab report laid out like the university paper form: school name and report title, student and lab fields, a framed body with experiment name and number. The sample (Hall effect) shows a data table, uncertainty propagation with siunitx and a pgfplots linear fit.",
+      "descriptionZh": "按高校纸质物理实验报告版式排版：校名与“物理实验报告”标题、学生与实验信息栏、加框正文（实验名称、实验编号）。示例（霍尔效应）含数据表、用 siunitx 写的不确定度计算和 pgfplots 线性拟合图。",
+      "license": "CC0-1.0",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "0d2a8c4716c98474c1b76a0db7e74bf5022a31bf3ae12c2a5610061eb0253c2b",
+      "licenseSha256": "2efe7b98cbcb5a35d00353066fb6e6e9c2f9ec2092b26d9e924f7c92fe497702",
+      "releaseTag": "templates-2026.10.30",
+      "files": 5,
+      "bytes": 7542,
+      "sha256": "aee5cc050e59959007ab7f8cc040834b8f414af23c94b72f0d5bc47334799b0f",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-physics-lab-report@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-physics-lab-report@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-physics-lab-report@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-physics-lab-report@2026.10.1.page-1.webp",
+          "typage-physics-lab-report@2026.10.1.page-2.webp",
+          "typage-physics-lab-report@2026.10.1.page-3.webp"
+        ]
+      },
+      "typage": {
+        "kind": "general",
+        "venue": null,
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "boxed",
+            "label": "Framed body, like the paper form",
+            "labelZh": "正文加框（同纸质报告）"
+          },
+          {
+            "id": "plain",
+            "label": "No frame",
+            "labelZh": "不加框"
+          },
+          {
+            "id": "boxed-wuhao",
+            "label": "Framed, size Wu Hao (10.5 pt)",
+            "labelZh": "加框 · 五号字"
+          }
+        ],
+        "pages": 3,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": null
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "beamer",
+      "version": "2026.10.1",
+      "name": "Academic Slides (beamer)",
+      "nameZh": "学术报告幻灯片（beamer）",
+      "category": "slides-cv",
+      "tags": [
+        "beamer",
+        "slides",
+        "16:9"
+      ],
+      "description": "A talk with title page, outline, itemized frames, a block, an equation and a results table; widescreen or 4:3.",
+      "descriptionZh": "学术报告幻灯片：标题页、目录、要点页、提示框、公式与结果表；宽屏或 4:3。",
+      "license": "CC0-1.0",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "ff415cc851616cbd57e741b501a332077abb9be95ebb275e21f79dadf16bed5e",
+      "licenseSha256": "f396354bb3cac7ca07319c8e7b4f80730ad5ee55c713f3893160386804ccc285",
+      "releaseTag": "templates-2026.10.30",
+      "files": 4,
+      "bytes": 2772,
+      "sha256": "6e0107b7ad9191fc69f9b247b0f202daafbf40117d9d770bb676f23d6cee8f0e",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-beamer@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-beamer@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-beamer@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-beamer@2026.10.1.page-1.webp",
+          "typage-beamer@2026.10.1.page-2.webp",
+          "typage-beamer@2026.10.1.page-3.webp"
+        ]
+      },
+      "typage": {
+        "kind": "general",
+        "venue": null,
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "wide",
+            "label": "Widescreen 16:9",
+            "labelZh": "宽屏 16:9"
+          },
+          {
+            "id": "standard",
+            "label": "Standard 4:3",
+            "labelZh": "标准 4:3"
+          }
+        ],
+        "pages": 6,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": null
+      }
+    },
+    {
+      "docFormat": "typage",
+      "id": "cv",
+      "version": "2026.10.1",
+      "name": "Academic CV",
+      "nameZh": "学术简历（CV）",
+      "category": "slides-cv",
+      "tags": [
+        "CV",
+        "resume"
+      ],
+      "description": "A one-column academic CV: contact line, research interests, education, positions, publications, teaching, awards and service.",
+      "descriptionZh": "单栏学术简历：联系方式、研究方向、教育经历、工作经历、论文、教学、奖项与学术服务。",
+      "license": "CC0-1.0",
+      "minAppVersion": "0.0.99",
+      "withdrawn": false,
+      "contentSha256": "f5c30915870ec4b788236c4d59b9adecb705e20ab6438197f5a0333cbf5a947b",
+      "licenseSha256": "17f3417d29909cfdb96872613846a6c806c3a0bdb6f170303933be1cb95351c0",
+      "releaseTag": "templates-2026.10.30",
+      "files": 4,
+      "bytes": 2870,
+      "sha256": "07bb8442daf7e39d583ed9f4caccd5e6a9efcb10894fbd80f5ad7d4c531670f1",
+      "zip": "https://github.com/fellowAI2025/7d24h-templates/releases/download/templates-2026.10.30/typage-cv@2026.10.1.zip",
+      "mirrorZip": "https://www.7d24h.work/downloads/templates/templates-2026.10.30/typage-cv@2026.10.1.zip",
+      "previews": {
+        "thumb": "typage-cv@2026.10.1.thumb.webp",
+        "pages": [
+          "typage-cv@2026.10.1.page-1.webp"
+        ]
+      },
+      "typage": {
+        "kind": "general",
+        "venue": null,
+        "engine": "tectonic-only",
+        "switchable": true,
+        "variants": [
+          {
+            "id": "a4",
+            "label": "A4",
+            "labelZh": "A4"
+          },
+          {
+            "id": "letter",
+            "label": "US Letter",
+            "labelZh": "US Letter"
+          }
+        ],
+        "pages": 1,
+        "fields": null,
+        "visualRaw": null,
+        "officialFilesUnchanged": null
+      }
+    }
+  ]
+}
