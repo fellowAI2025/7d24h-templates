@@ -34,8 +34,8 @@
     },
     {
       "path": "main.tex",
-      "sha256": "28d6fad8408720699dcc2259a9b5f428c2af4e5b01e2512e9429ec467557f3c0",
-      "bytes": 5863
+      "sha256": "9d4670d40571595c4983baf0bb71ceadb8588ba69d273c91b40177d261c0b81b",
+      "bytes": 5857
     },
     {
       "path": "physlab.cls",
@@ -44,7 +44,7 @@
     },
     {
       "path": "typage.json",
-      "sha256": "99762e5a875341a35155343cddd4749eba106886dc2f0b7493a15a3edc892c30",
+      "sha256": "9e0fa74843806ae394e8ab898cff2be94dcb652c2c4a75cdc94257290cbc0777",
       "bytes": 2165
     }
   ]
